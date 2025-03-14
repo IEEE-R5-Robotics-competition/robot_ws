@@ -1,4 +1,6 @@
 #define USE_BASE
+#define LEFT 0 
+#define RIGHT 1
 
 // Include the Adafruit Motor Shield V2 library
 #include <Adafruit_MotorShield.h>
@@ -17,10 +19,10 @@ void initMotorController() {
 
 // Set speed for an individual motor
 void setMotorSpeed(int i, int spd) {
-  /*Serial.print("Setting motor ");
-  Serial.print(i == LEFT ? "LEFT" : "RIGHT");
-  Serial.print(" speed to ");
-  Serial.println(spd); */
+  // Serial.print("Setting motor ");
+  // Serial.print(i == LEFT ? "LEFT" : "RIGHT");
+  // Serial.print(" speed to ");
+  // Serial.println(spd);
 
   if (spd > 255) spd = 255;
   if (spd < -255) spd = -255;
@@ -50,10 +52,10 @@ void setMotorSpeed(int i, int spd) {
 
 // Set speed for both motors
 void setMotorSpeeds(int leftSpeed, int rightSpeed) {
-  /*Serial.print("Setting motors: LEFT=");
-  Serial.print(leftSpeed);
-  Serial.print(", RIGHT=");
-  Serial.println(rightSpeed);*/
+  // Serial.print("Setting motors: LEFT=");
+  // Serial.print(leftSpeed);
+  // Serial.print(", RIGHT=");
+  // Serial.println(rightSpeed);
 
   setMotorSpeed(LEFT, leftSpeed);
   setMotorSpeed(RIGHT, rightSpeed);

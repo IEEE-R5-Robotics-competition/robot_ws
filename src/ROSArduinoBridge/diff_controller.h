@@ -111,7 +111,7 @@ void updatePID() {
   
   /* If we're not moving there is nothing more to do */
   if (!moving){
-    //Serial.println("we are not moving");
+    // Serial.println("we are not moving");
     /*
     * Reset PIDs once, to prevent startup spikes,
     * see http://brettbeauregard.com/blog/2011/04/improving-the-beginner%E2%80%99s-pid-initialization/
@@ -129,3 +129,4 @@ void updatePID() {
   /* Set the motor speeds accordingly */
   setMotorSpeeds(leftPID.output, rightPID.output);
 }
+

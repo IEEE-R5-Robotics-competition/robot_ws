@@ -29,6 +29,7 @@
     
   /* Interrupt routine for LEFT encoder */
   ISR (PCINT2_vect){
+    //Serial.println("Left motor moving");
     static uint8_t enc_last=0;
     enc_last <<=2; 
     enc_last |= (PIND & (3 << 2)) >> 2; 
@@ -36,10 +37,11 @@
   }
   
   /* Interrupt routine for RIGHT encoder */
-  ISR (PCINT1_vect){
+  ISR (PCINT0_vect){
+    //Serial.println("Right motor moving");
     static uint8_t enc_last=0;
     enc_last <<=2; 
-    enc_last |= (PINC & (3 << 4)) >> 4; 
+    enc_last |= (PINB & (3 << 0)) >> 0; 
     right_enc_pos += ENC_STATES[(enc_last & 0x0f)];
   }
   

@@ -1,0 +1,1 @@
+Invoking command in '/home/ana/robot_ws/build/diffdrive_arduino': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ana/robot_ws/src/diffdrive_arduino -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/diffdrive_arduino
