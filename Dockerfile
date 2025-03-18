@@ -4,64 +4,68 @@ FROM ros:humble
 # Set up the environment
 ENV ROS_DISTRO=humble
 
-# Install necessary ROS 2 packages
+# (Do not add the repository manually as the base image already configures it)
+
+# Update package lists and install ROS 2 packages including your original build commands.
 RUN apt-get update && apt-get install -y \
+    ros-$ROS_DISTRO-ros-base \
+    ros-$ROS_DISTRO-rmw-fastrtps-cpp \
+    ros-$ROS_DISTRO-rclcpp \
+    ros-$ROS_DISTRO-rclpy \
+    ros-$ROS_DISTRO-std-msgs \
+    ros-$ROS_DISTRO-sensor-msgs \
+    ros-$ROS_DISTRO-geometry-msgs \
+    ros-$ROS_DISTRO-nav-msgs \
+    ros-$ROS_DISTRO-tf2-ros \
+    ros-$ROS_DISTRO-robot-state-publisher \
+    ros-$ROS_DISTRO-slam-toolbox \
+    ros-$ROS_DISTRO-nav2-bringup \
+    # The following packages have been problematic and are commented out:
+    # ros-$ROS_DISTRO-map-server \
+    # ros-$ROS_DISTRO-amcl \
+    # ros-$ROS_DISTRO-dwa-local-planner \
+    # ros-$ROS_DISTRO-serial \
+    # ros-$ROS_DISTRO-i2c-tools \
+    # python3-pyserial \
+    ros-$ROS_DISTRO-rosbridge-server \
+    ros-$ROS_DISTRO-rplidar-ros \
+    ros-$ROS_DISTRO-robot-localization \
+    ros-$ROS_DISTRO-ackermann-msgs \
+    ros-$ROS_DISTRO-diff-drive-controller \
     ros-$ROS_DISTRO-desktop \
     ros-$ROS_DISTRO-demo-nodes-cpp \
     ros-$ROS_DISTRO-demo-nodes-py \
-    #xacro
     ros-$ROS_DISTRO-xacro \
     ros-$ROS_DISTRO-joint-state-publisher-gui \
-    # SLAM packages
     ros-$ROS_DISTRO-slam-toolbox \
     ros-$ROS_DISTRO-nav2-bringup \
     ros-$ROS_DISTRO-navigation2 \
-    # Serial communication
     ros-$ROS_DISTRO-serial-driver \
-    # Visualization tools
     ros-$ROS_DISTRO-rviz2 \
-    # For LiDAR support
     ros-$ROS_DISTRO-rplidar-ros \
-    # Utils
     python3-pip \
     python3-rosdep \
     python3-colcon-common-extensions \
-    # For serial port access
+    i2c-tools \
     udev \
-    # Development tools
     git \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
+    build-essential && \
+    rm -rf /var/lib/apt/lists/*
 
-# Create a workspace directory
-RUN mkdir -p /ros2_ws/src
+# Resolve any missing dependencies.
+# The "|| true" lets the build continue even if rosdep can't install some testing/development packages.
+RUN rosdep update && rosdep install --from-paths /opt/ros/$ROS_DISTRO/share --ignore-src -r -y || true
 
-# Set the working directory
-WORKDIR /ros2_ws
+# Install python3-pyserial separately (if needed)
+RUN apt-get update && apt-get install -y python3-pyserial && rm -rf /var/lib/apt/lists/*
 
-ARG CACHEBUST=1
-# Copy your ROS 2 package into the workspace
-COPY ./src /ros2_ws/src
+# Set the working directory to your ROS workspace (assumed to be robot_ws)
+WORKDIR /robot_ws
+# Copy your workspace source code into the container
+COPY . /robot_ws
 
-# Set up serial permissions (optional - you might need to set up udev rules on the host)
-RUN echo 'KERNEL=="ttyUSB*", MODE="0666"' > /etc/udev/rules.d/99-serial.rules
-RUN echo 'KERNEL=="ttyACM*", MODE="0666"' >> /etc/udev/rules.d/99-serial.rules
+# Source the ROS 2 environment and build the workspace using colcon.
+RUN . /opt/ros/$ROS_DISTRO/setup.sh && colcon build --symlink-install
 
-# Source ROS 2 first - this is the critical fix
-RUN . /opt/ros/$ROS_DISTRO/setup.sh && \
-    apt-get update && \
-    rosdep init || echo "rosdep already initialized" && \
-    rosdep update && \
-    rosdep install --from-paths src --ignore-src -y && \
-    colcon build
-
-# Build the workspace
-# Add this line before the colcon build step
-
-RUN colcon build --symlink-install
-
-# Source the setup file
-RUN echo "source /ros2_ws/install/setup.bash" >> ~/.bashrc
-
-# Set the default command to run when the container starts
-CMD ["bash"]
+# Set the default command to source both the ROS environment and your workspace's install setup.
+CMD ["bash", "-c", "source /opt/ros/$ROS_DISTRO/setup.bash && source /robot_ws/install/setup.bash && exec bash"]
