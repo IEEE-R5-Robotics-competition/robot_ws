@@ -1,0 +1,8 @@
+{
+  "package_name": "firebot",
+  "non_idl_tuples": [
+    "/home/ana/robot_ws/src/firebot:msg/EncoderData.msg",
+    "/home/ana/robot_ws/src/firebot:msg/MotorCommand.msg",
+    "/home/ana/robot_ws/src/firebot:srv/SetPIDParams.srv"
+  ]
+}

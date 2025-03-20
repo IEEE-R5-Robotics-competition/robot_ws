@@ -1,0 +1,6 @@
+[  1%] Built target firebot__cpp
+[  5%] Built target tf_broadcaster
+[  9%] Built target lidar_node
+[ 18%] Built target firebot__rosidl_generator_c
+[ 21%] Built target motor_controller
+[ 25%] Built target odometry_publisher

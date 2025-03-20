@@ -1,0 +1,9 @@
+/home/ana/robot_ws/build/firebot_cpp/CMakeFiles/uninstall.dir
+/home/ana/robot_ws/build/firebot_cpp/CMakeFiles/firebot_cpp_uninstall.dir
+/home/ana/robot_ws/build/firebot_cpp/CMakeFiles/test.dir
+/home/ana/robot_ws/build/firebot_cpp/CMakeFiles/edit_cache.dir
+/home/ana/robot_ws/build/firebot_cpp/CMakeFiles/rebuild_cache.dir
+/home/ana/robot_ws/build/firebot_cpp/CMakeFiles/list_install_components.dir
+/home/ana/robot_ws/build/firebot_cpp/CMakeFiles/install.dir
+/home/ana/robot_ws/build/firebot_cpp/CMakeFiles/install/local.dir
+/home/ana/robot_ws/build/firebot_cpp/CMakeFiles/install/strip.dir

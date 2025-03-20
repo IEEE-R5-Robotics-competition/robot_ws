@@ -1,0 +1,6 @@
+Invoking command in '/home/ana/robot_ws/build/firebot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ana/robot_ws/src/firebot -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/firebot
+Invoked command in '/home/ana/robot_ws/build/firebot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/ana/robot_ws/src/firebot -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/firebot
+Invoking command in '/home/ana/robot_ws/build/firebot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot -- -j20 -l20
+Invoked command in '/home/ana/robot_ws/build/firebot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot -- -j20 -l20
+Invoking command in '/home/ana/robot_ws/build/firebot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/firebot
+Invoked command in '/home/ana/robot_ws/build/firebot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/firebot

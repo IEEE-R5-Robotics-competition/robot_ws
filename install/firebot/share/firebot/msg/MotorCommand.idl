@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from firebot/msg/MotorCommand.msg
+// generated code does not contain a copyright notice
+
+
+module firebot {
+  module msg {
+    struct MotorCommand {
+      uint8 structure_needs_at_least_one_member;
+    };
+  };
+};

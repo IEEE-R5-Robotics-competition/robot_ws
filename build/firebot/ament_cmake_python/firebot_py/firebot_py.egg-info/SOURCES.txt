@@ -1,0 +1,11 @@
+setup.py
+firebot_py/__init__.py
+firebot_py/lidar_processing.py
+firebot_py/navigation_control.py
+firebot_py/serial_bridge.py
+firebot_py/slam_mapping.py
+firebot_py/thermal_camera.py
+firebot_py.egg-info/PKG-INFO
+firebot_py.egg-info/SOURCES.txt
+firebot_py.egg-info/dependency_links.txt
+firebot_py.egg-info/top_level.txt

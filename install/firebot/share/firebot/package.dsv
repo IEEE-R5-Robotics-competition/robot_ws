@@ -1,0 +1,11 @@
+source;share/firebot/hook/cmake_prefix_path.ps1
+source;share/firebot/hook/cmake_prefix_path.dsv
+source;share/firebot/hook/cmake_prefix_path.sh
+source;share/firebot/hook/ld_library_path_lib.ps1
+source;share/firebot/hook/ld_library_path_lib.dsv
+source;share/firebot/hook/ld_library_path_lib.sh
+source;share/firebot/local_setup.bash
+source;share/firebot/local_setup.dsv
+source;share/firebot/local_setup.ps1
+source;share/firebot/local_setup.sh
+source;share/firebot/local_setup.zsh

@@ -1,0 +1,25 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from firebot/srv/SetPIDParams.srv
+// generated code does not contain a copyright notice
+
+
+module firebot {
+  module srv {
+    @verbatim (language="comment", text=
+      "Request part")
+    struct SetPIDParams_Request {
+      double kp;
+
+      double ki;
+
+      double kd;
+    };
+    @verbatim (language="comment", text=
+      "Response part")
+    struct SetPIDParams_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

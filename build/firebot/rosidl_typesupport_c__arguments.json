@@ -1,0 +1,21 @@
+{
+  "package_name": "firebot",
+  "output_dir": "/home/ana/robot_ws/build/firebot/rosidl_typesupport_c/firebot",
+  "template_dir": "/opt/ros/humble/share/rosidl_typesupport_c/resource",
+  "idl_tuples": [
+    "/home/ana/robot_ws/build/firebot/rosidl_adapter/firebot:msg/EncoderData.idl",
+    "/home/ana/robot_ws/build/firebot/rosidl_adapter/firebot:msg/MotorCommand.idl",
+    "/home/ana/robot_ws/build/firebot/rosidl_adapter/firebot:srv/SetPIDParams.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/humble/lib/rosidl_typesupport_c/rosidl_typesupport_c",
+    "/opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_typesupport_c/__init__.py",
+    "/opt/ros/humble/share/rosidl_typesupport_c/resource/action__type_support.c.em",
+    "/opt/ros/humble/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
+    "/opt/ros/humble/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
+    "/home/ana/robot_ws/build/firebot/rosidl_adapter/firebot/msg/EncoderData.idl",
+    "/home/ana/robot_ws/build/firebot/rosidl_adapter/firebot/msg/MotorCommand.idl",
+    "/home/ana/robot_ws/build/firebot/rosidl_adapter/firebot/srv/SetPIDParams.idl"
+  ]
+}

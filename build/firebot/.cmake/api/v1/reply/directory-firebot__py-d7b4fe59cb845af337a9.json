@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "firebot__py",
+		"source" : "/home/ana/robot_ws/build/firebot/firebot__py"
+	}
+}

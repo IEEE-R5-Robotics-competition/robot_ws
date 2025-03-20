@@ -1,0 +1,459 @@
+[0.000000] (-) TimerEvent: {}
+[0.000285] (-) JobUnselected: {'identifier': 'articubot_one'}
+[0.000331] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.000362] (-) JobUnselected: {'identifier': 'serial'}
+[0.000390] (-) JobUnselected: {'identifier': 'test_package'}
+[0.000419] (firebot) JobQueued: {'identifier': 'firebot', 'dependencies': OrderedDict()}
+[0.000452] (firebot) JobStarted: {'identifier': 'firebot'}
+[0.009305] (firebot) JobProgress: {'identifier': 'firebot', 'progress': 'cmake'}
+[0.010189] (firebot) Command: {'cmd': ['/usr/bin/cmake', '/home/ana/robot_ws/src/firebot', '-DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/firebot'], 'cwd': '/home/ana/robot_ws/build/firebot', 'env': OrderedDict([('USER', 'ana'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ana/robot_ws/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ana/robot_ws'), ('HOME', '/home/ana'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/ana/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '5119'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ana/robot_ws/install'), ('LOGNAME', 'ana'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ana'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ana-XPS-15-9530:@/tmp/.ICE-unix/2228,unix/ana-XPS-15-9530:/tmp/.ICE-unix/2228'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/baa572c3_0afd_41e3_9aa5_36674f9f10b4'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.44LM32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ana/robot_ws/build/firebot'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[0.030513] (firebot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099107] (-) TimerEvent: {}
+[0.199262] (firebot) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199593] (-) TimerEvent: {}
+[0.241356] (firebot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.244786] (firebot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.252548] (firebot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.265476] (firebot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.282435] (firebot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.299886] (-) TimerEvent: {}
+[0.331866] (firebot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.333882] (firebot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400122] (-) TimerEvent: {}
+[0.475897] (firebot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500330] (-) TimerEvent: {}
+[0.538363] (firebot) StdoutLine: {'line': b'-- Found rclpy: 3.3.15 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.538760] (firebot) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.573924] (firebot) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.600573] (-) TimerEvent: {}
+[0.700914] (-) TimerEvent: {}
+[0.801330] (-) TimerEvent: {}
+[0.901806] (-) TimerEvent: {}
+[0.918763] (firebot) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.002060] (-) TimerEvent: {}
+[1.102512] (-) TimerEvent: {}
+[1.202987] (-) TimerEvent: {}
+[1.302429] (firebot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.302999] (-) TimerEvent: {}
+[1.403301] (-) TimerEvent: {}
+[1.468609] (firebot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.499398] (firebot) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.503469] (-) TimerEvent: {}
+[1.533322] (firebot) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.533645] (firebot) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.533778] (firebot) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.560940] (firebot) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.603746] (-) TimerEvent: {}
+[1.618449] (firebot) StdoutLine: {'line': b'-- Generating done\n'}
+[1.640993] (firebot) StdoutLine: {'line': b'-- Build files have been written to: /home/ana/robot_ws/build/firebot\n'}
+[1.654364] (firebot) CommandEnded: {'returncode': 0}
+[1.655504] (firebot) JobProgress: {'identifier': 'firebot', 'progress': 'build'}
+[1.656716] (firebot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ana/robot_ws/build/firebot', '--', '-j20', '-l20'], 'cwd': '/home/ana/robot_ws/build/firebot', 'env': OrderedDict([('USER', 'ana'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ana/robot_ws/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ana/robot_ws'), ('HOME', '/home/ana'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/ana/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '5119'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ana/robot_ws/install'), ('LOGNAME', 'ana'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ana'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ana-XPS-15-9530:@/tmp/.ICE-unix/2228,unix/ana-XPS-15-9530:/tmp/.ICE-unix/2228'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/baa572c3_0afd_41e3_9aa5_36674f9f10b4'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.44LM32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ana/robot_ws/build/firebot'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[1.703877] (-) TimerEvent: {}
+[1.721420] (firebot) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.738363] (firebot) StdoutLine: {'line': b'[  3%] \x1b[32mBuilding CXX object CMakeFiles/motor_controller.dir/src/motor_controller.cpp.o\x1b[0m\n'}
+[1.740939] (firebot) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.741996] (firebot) StdoutLine: {'line': b'[  7%] \x1b[32mBuilding CXX object CMakeFiles/lidar_node.dir/src/lidar_node.cpp.o\x1b[0m\n'}
+[1.743266] (firebot) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding CXX object CMakeFiles/tf_broadcaster.dir/src/tf_broadcaster.cpp.o\x1b[0m\n'}
+[1.745411] (firebot) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding CXX object CMakeFiles/odometry_publisher.dir/src/odometry_publisher.cpp.o\x1b[0m\n'}
+[1.754789] (firebot) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_copy_firebot_py\n'}
+[1.763091] (firebot) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_copy_firebot\n'}
+[1.804066] (-) TimerEvent: {}
+[1.904595] (-) TimerEvent: {}
+[2.005104] (-) TimerEvent: {}
+[2.105775] (-) TimerEvent: {}
+[2.206583] (-) TimerEvent: {}
+[2.295388] (firebot) StdoutLine: {'line': b'running egg_info\n'}
+[2.297050] (firebot) StdoutLine: {'line': b'creating firebot_py.egg-info\n'}
+[2.297617] (firebot) StdoutLine: {'line': b'writing firebot_py.egg-info/PKG-INFO\n'}
+[2.298131] (firebot) StdoutLine: {'line': b'writing dependency_links to firebot_py.egg-info/dependency_links.txt\n'}
+[2.298674] (firebot) StdoutLine: {'line': b'writing top-level names to firebot_py.egg-info/top_level.txt\n'}
+[2.299174] (firebot) StdoutLine: {'line': b"writing manifest file 'firebot_py.egg-info/SOURCES.txt'\n"}
+[2.304813] (firebot) StdoutLine: {'line': b"reading manifest file 'firebot_py.egg-info/SOURCES.txt'\n"}
+[2.306086] (firebot) StdoutLine: {'line': b"writing manifest file 'firebot_py.egg-info/SOURCES.txt'\n"}
+[2.306653] (-) TimerEvent: {}
+[2.323049] (firebot) StdoutLine: {'line': b'running egg_info\n'}
+[2.324236] (firebot) StdoutLine: {'line': b'creating firebot.egg-info\n'}
+[2.324796] (firebot) StdoutLine: {'line': b'writing firebot.egg-info/PKG-INFO\n'}
+[2.325267] (firebot) StdoutLine: {'line': b'writing dependency_links to firebot.egg-info/dependency_links.txt\n'}
+[2.325784] (firebot) StdoutLine: {'line': b'writing top-level names to firebot.egg-info/top_level.txt\n'}
+[2.326110] (firebot) StdoutLine: {'line': b"writing manifest file 'firebot.egg-info/SOURCES.txt'\n"}
+[2.329613] (firebot) StdoutLine: {'line': b"reading manifest file 'firebot.egg-info/SOURCES.txt'\n"}
+[2.330554] (firebot) StdoutLine: {'line': b"writing manifest file 'firebot.egg-info/SOURCES.txt'\n"}
+[2.382812] (firebot) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_build_firebot_py_egg\n'}
+[2.406945] (-) TimerEvent: {}
+[2.414205] (firebot) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_build_firebot_egg\n'}
+[2.509185] (-) TimerEvent: {}
+[2.545687] (firebot) StdoutLine: {'line': b'[ 10%] Built target firebot__cpp\n'}
+[2.571339] (firebot) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.573839] (firebot) StdoutLine: {'line': b'[ 14%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.575507] (firebot) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.611330] (-) TimerEvent: {}
+[2.687544] (firebot) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_generator_c.dir/rosidl_generator_c/firebot/msg/detail/motor_command__functions.c.o\x1b[0m\n'}
+[2.688281] (firebot) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_generator_c.dir/rosidl_generator_c/firebot/msg/detail/encoder_data__functions.c.o\x1b[0m\n'}
+[2.688637] (firebot) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_generator_c.dir/rosidl_generator_c/firebot/srv/detail/set_pid_params__functions.c.o\x1b[0m\n'}
+[2.711572] (-) TimerEvent: {}
+[2.812298] (-) TimerEvent: {}
+[2.872499] (firebot) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking C shared library libfirebot__rosidl_generator_c.so\x1b[0m\n'}
+[2.912506] (-) TimerEvent: {}
+[2.978591] (firebot) StdoutLine: {'line': b'[ 23%] Built target firebot__rosidl_generator_c\n'}
+[3.005311] (firebot) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.006058] (firebot) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.008050] (firebot) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.012621] (-) TimerEvent: {}
+[3.113174] (-) TimerEvent: {}
+[3.213842] (-) TimerEvent: {}
+[3.248158] (firebot) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/firebot/srv/set_pid_params__type_support.cpp.o\x1b[0m\n'}
+[3.252953] (firebot) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/firebot/msg/encoder_data__type_support.cpp.o\x1b[0m\n'}
+[3.254796] (firebot) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/firebot/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[3.314067] (-) TimerEvent: {}
+[3.344656] (firebot) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/firebot/msg/detail/motor_command__type_support.cpp.o\x1b[0m\n'}
+[3.350439] (firebot) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/firebot/msg/detail/encoder_data__type_support.cpp.o\x1b[0m\n'}
+[3.351122] (firebot) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/firebot/srv/detail/set_pid_params__type_support.cpp.o\x1b[0m\n'}
+[3.414288] (-) TimerEvent: {}
+[3.515101] (-) TimerEvent: {}
+[3.608757] (firebot) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/firebot/msg/detail/dds_fastrtps/encoder_data__type_support.cpp.o\x1b[0m\n'}
+[3.609658] (firebot) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/firebot/srv/detail/dds_fastrtps/set_pid_params__type_support.cpp.o\x1b[0m\n'}
+[3.611283] (firebot) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/firebot/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o\x1b[0m\n'}
+[3.615268] (-) TimerEvent: {}
+[3.716031] (-) TimerEvent: {}
+[3.816892] (-) TimerEvent: {}
+[3.917737] (-) TimerEvent: {}
+[4.018565] (-) TimerEvent: {}
+[4.032117] (firebot) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/firebot/msg/detail/motor_command__type_support_c.cpp.o\x1b[0m\n'}
+[4.032791] (firebot) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/firebot/msg/detail/encoder_data__type_support_c.cpp.o\x1b[0m\n'}
+[4.033146] (firebot) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/firebot/srv/detail/set_pid_params__type_support_c.cpp.o\x1b[0m\n'}
+[4.042298] (firebot) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_c.dir/rosidl_typesupport_c/firebot/msg/encoder_data__type_support.cpp.o\x1b[0m\n'}
+[4.042963] (firebot) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_c.dir/rosidl_typesupport_c/firebot/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[4.043340] (firebot) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding CXX object CMakeFiles/firebot__rosidl_typesupport_c.dir/rosidl_typesupport_c/firebot/srv/set_pid_params__type_support.cpp.o\x1b[0m\n'}
+[4.118773] (-) TimerEvent: {}
+[4.162136] (firebot) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/firebot/msg/detail/motor_command__type_support.c.o\x1b[0m\n'}
+[4.164190] (firebot) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/firebot/msg/detail/encoder_data__type_support.c.o\x1b[0m\n'}
+[4.173369] (firebot) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/firebot/srv/detail/set_pid_params__type_support.c.o\x1b[0m\n'}
+[4.183773] (firebot) StdoutLine: {'line': b'[ 63%] \x1b[32m\x1b[1mLinking CXX shared library libfirebot__rosidl_typesupport_c.so\x1b[0m\n'}
+[4.219012] (-) TimerEvent: {}
+[4.279158] (firebot) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library libfirebot__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[4.298150] (firebot) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking C shared library libfirebot__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[4.323106] (firebot) StdoutLine: {'line': b'[ 67%] Built target firebot__rosidl_typesupport_c\n'}
+[4.323654] (-) TimerEvent: {}
+[4.382379] (firebot) StdoutLine: {'line': b'[ 67%] Built target firebot__rosidl_typesupport_introspection_c\n'}
+[4.385573] (firebot) StdoutLine: {'line': b'[ 67%] Built target firebot__rosidl_typesupport_cpp\n'}
+[4.423877] (-) TimerEvent: {}
+[4.524660] (-) TimerEvent: {}
+[4.625445] (-) TimerEvent: {}
+[4.726234] (-) TimerEvent: {}
+[4.825133] (firebot) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libfirebot__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[4.826358] (-) TimerEvent: {}
+[4.927049] (-) TimerEvent: {}
+[5.005102] (firebot) StdoutLine: {'line': b'[ 69%] Built target firebot__rosidl_typesupport_introspection_cpp\n'}
+[5.027212] (-) TimerEvent: {}
+[5.128012] (-) TimerEvent: {}
+[5.157151] (firebot) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libfirebot__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[5.228229] (-) TimerEvent: {}
+[5.287604] (firebot) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libfirebot__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[5.328378] (-) TimerEvent: {}
+[5.383839] (firebot) StdoutLine: {'line': b'[ 72%] Built target firebot__rosidl_typesupport_fastrtps_c\n'}
+[5.428606] (-) TimerEvent: {}
+[5.496921] (firebot) StdoutLine: {'line': b'[ 72%] Built target firebot__rosidl_typesupport_fastrtps_cpp\n'}
+[5.528761] (-) TimerEvent: {}
+[5.552430] (firebot) StdoutLine: {'line': b'[ 72%] Built target firebot\n'}
+[5.598877] (firebot) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[5.629092] (-) TimerEvent: {}
+[5.729914] (-) TimerEvent: {}
+[5.830459] (-) TimerEvent: {}
+[5.931083] (-) TimerEvent: {}
+[6.031711] (-) TimerEvent: {}
+[6.132196] (-) TimerEvent: {}
+[6.232667] (-) TimerEvent: {}
+[6.333152] (-) TimerEvent: {}
+[6.433651] (-) TimerEvent: {}
+[6.534286] (-) TimerEvent: {}
+[6.543040] (firebot) StdoutLine: {'line': b'[ 74%] Built target firebot__py\n'}
+[6.597417] (firebot) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_generator_py.dir/rosidl_generator_py/firebot/msg/_encoder_data_s.c.o\x1b[0m\n'}
+[6.601041] (firebot) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_generator_py.dir/rosidl_generator_py/firebot/msg/_motor_command_s.c.o\x1b[0m\n'}
+[6.603966] (firebot) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_generator_py.dir/rosidl_generator_py/firebot/srv/_set_pid_params_s.c.o\x1b[0m\n'}
+[6.634470] (-) TimerEvent: {}
+[6.735153] (-) TimerEvent: {}
+[6.835911] (-) TimerEvent: {}
+[6.836785] (firebot) StdoutLine: {'line': b'[ 81%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/firebot/libfirebot__rosidl_generator_py.so\x1b[0m\n'}
+[6.936282] (-) TimerEvent: {}
+[6.942784] (firebot) StdoutLine: {'line': b'[ 81%] Built target firebot__rosidl_generator_py\n'}
+[6.993574] (firebot) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/firebot/_firebot_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.998831] (firebot) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/firebot/_firebot_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[7.001053] (firebot) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/firebot__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/firebot/_firebot_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[7.036469] (-) TimerEvent: {}
+[7.137089] (-) TimerEvent: {}
+[7.208721] (firebot) StdoutLine: {'line': b'[ 89%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/firebot/firebot_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.215817] (firebot) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/firebot/firebot_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.237261] (-) TimerEvent: {}
+[7.278851] (firebot) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/firebot/firebot_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[7.289289] (firebot) StdoutLine: {'line': b'[ 92%] Built target firebot__rosidl_typesupport_c__pyext\n'}
+[7.302711] (firebot) StdoutLine: {'line': b'[ 92%] Built target firebot__rosidl_typesupport_introspection_c__pyext\n'}
+[7.337443] (-) TimerEvent: {}
+[7.360858] (firebot) StdoutLine: {'line': b'[ 92%] Built target firebot__rosidl_typesupport_fastrtps_c__pyext\n'}
+[7.437584] (-) TimerEvent: {}
+[7.538162] (-) TimerEvent: {}
+[7.638664] (-) TimerEvent: {}
+[7.739262] (-) TimerEvent: {}
+[7.839852] (-) TimerEvent: {}
+[7.940302] (-) TimerEvent: {}
+[7.974030] (firebot) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking CXX executable tf_broadcaster\x1b[0m\n'}
+[7.987456] (firebot) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking CXX executable motor_controller\x1b[0m\n'}
+[8.040446] (-) TimerEvent: {}
+[8.141054] (-) TimerEvent: {}
+[8.161662] (firebot) StdoutLine: {'line': b'[ 96%] Built target tf_broadcaster\n'}
+[8.170645] (firebot) StdoutLine: {'line': b'[ 96%] Built target motor_controller\n'}
+[8.241187] (-) TimerEvent: {}
+[8.281384] (firebot) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX executable odometry_publisher\x1b[0m\n'}
+[8.341450] (-) TimerEvent: {}
+[8.441986] (-) TimerEvent: {}
+[8.444134] (firebot) StdoutLine: {'line': b'[ 98%] Built target odometry_publisher\n'}
+[8.536191] (firebot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable lidar_node\x1b[0m\n'}
+[8.542185] (-) TimerEvent: {}
+[8.642520] (-) TimerEvent: {}
+[8.676472] (firebot) StdoutLine: {'line': b'[100%] Built target lidar_node\n'}
+[8.693278] (firebot) CommandEnded: {'returncode': 0}
+[8.695023] (firebot) JobProgress: {'identifier': 'firebot', 'progress': 'install'}
+[8.707948] (firebot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ana/robot_ws/build/firebot'], 'cwd': '/home/ana/robot_ws/build/firebot', 'env': OrderedDict([('USER', 'ana'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ana/robot_ws/install/serial/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ana/robot_ws'), ('HOME', '/home/ana'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/ana/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '5119'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ana/robot_ws/install'), ('LOGNAME', 'ana'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ana'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ana-XPS-15-9530:@/tmp/.ICE-unix/2228,unix/ana-XPS-15-9530:/tmp/.ICE-unix/2228'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/baa572c3_0afd_41e3_9aa5_36674f9f10b4'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.115'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.44LM32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ana/robot_ws/build/firebot'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/opt/ros/humble')]), 'shell': False}
+[8.718902] (firebot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.719161] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/ament_index/resource_index/rosidl_interfaces/firebot\n'}
+[8.719660] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot\n'}
+[8.719902] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv\n'}
+[8.720011] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/set_pid_params.h\n'}
+[8.720329] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail\n'}
+[8.720569] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__struct.h\n'}
+[8.720669] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__type_support.h\n'}
+[8.720751] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__functions.h\n'}
+[8.720897] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__functions.c\n'}
+[8.721030] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg\n'}
+[8.721112] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.721352] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/motor_command.h\n'}
+[8.721538] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/encoder_data.h\n'}
+[8.721632] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail\n'}
+[8.721715] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__struct.h\n'}
+[8.721801] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__functions.h\n'}
+[8.721879] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__functions.c\n'}
+[8.722059] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__type_support.h\n'}
+[8.722303] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__type_support.h\n'}
+[8.722416] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__struct.h\n'}
+[8.722491] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__functions.c\n'}
+[8.722561] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__functions.h\n'}
+[8.722669] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/environment/library_path.sh\n'}
+[8.722750] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/environment/library_path.dsv\n'}
+[8.722878] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_generator_c.so\n'}
+[8.722958] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_generator_c.so" to ""\n'}
+[8.723087] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot\n'}
+[8.723193] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv\n'}
+[8.723273] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail\n'}
+[8.723352] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__rosidl_typesupport_fastrtps_c.h\n'}
+[8.723429] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg\n'}
+[8.723548] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.723643] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail\n'}
+[8.723720] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__rosidl_typesupport_fastrtps_c.h\n'}
+[8.723828] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__rosidl_typesupport_fastrtps_c.h\n'}
+[8.723916] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_fastrtps_c.so\n'}
+[8.724028] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.724131] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot\n'}
+[8.724208] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv\n'}
+[8.724319] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/set_pid_params.hpp\n'}
+[8.724407] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail\n'}
+[8.724527] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__struct.hpp\n'}
+[8.724611] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__builder.hpp\n'}
+[8.724743] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__traits.hpp\n'}
+[8.724841] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__type_support.hpp\n'}
+[8.724927] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg\n'}
+[8.725023] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/encoder_data.hpp\n'}
+[8.725114] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[8.725200] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/motor_command.hpp\n'}
+[8.725286] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail\n'}
+[8.725370] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__traits.hpp\n'}
+[8.725455] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__struct.hpp\n'}
+[8.725587] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__struct.hpp\n'}
+[8.725674] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__builder.hpp\n'}
+[8.725788] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__type_support.hpp\n'}
+[8.725908] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__traits.hpp\n'}
+[8.726040] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__builder.hpp\n'}
+[8.726127] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__type_support.hpp\n'}
+[8.726210] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot\n'}
+[8.726335] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv\n'}
+[8.726415] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail\n'}
+[8.726522] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.726599] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/dds_fastrtps\n'}
+[8.726676] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg\n'}
+[8.726748] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail\n'}
+[8.726846] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.726962] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.727059] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/dds_fastrtps\n'}
+[8.727138] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.727225] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.727368] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[8.727452] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot\n'}
+[8.727568] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv\n'}
+[8.727658] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail\n'}
+[8.727747] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__rosidl_typesupport_introspection_c.h\n'}
+[8.727834] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__type_support.c\n'}
+[8.727923] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg\n'}
+[8.728026] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.728114] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail\n'}
+[8.728202] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__rosidl_typesupport_introspection_c.h\n'}
+[8.728289] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__type_support.c\n'}
+[8.728432] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__type_support.c\n'}
+[8.728514] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__rosidl_typesupport_introspection_c.h\n'}
+[8.728600] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_introspection_c.so\n'}
+[8.728720] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.728800] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_c.so\n'}
+[8.728873] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_c.so" to ""\n'}
+[8.728946] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot\n'}
+[8.729075] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv\n'}
+[8.729175] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail\n'}
+[8.729273] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.729349] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/srv/detail/set_pid_params__type_support.cpp\n'}
+[8.729448] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg\n'}
+[8.729550] (firebot) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail\n'}
+[8.729649] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__type_support.cpp\n'}
+[8.729732] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.729814] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/encoder_data__type_support.cpp\n'}
+[8.729895] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/include/firebot/firebot/msg/detail/motor_command__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.730037] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_introspection_cpp.so\n'}
+[8.730138] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[8.730212] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_cpp.so\n'}
+[8.730285] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_typesupport_cpp.so" to ""\n'}
+[8.730360] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/environment/pythonpath.sh\n'}
+[8.730434] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/environment/pythonpath.dsv\n'}
+[8.730510] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot-0.0.1-py3.10.egg-info\n'}
+[8.730589] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[8.730665] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[8.730795] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[8.730873] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[8.730947] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot\n'}
+[8.731033] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/firebot_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.731153] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/_firebot_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[8.731230] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/__init__.py\n'}
+[8.731304] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/libfirebot__rosidl_generator_py.so\n'}
+[8.731410] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/srv\n'}
+[8.731488] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/srv/__init__.py\n'}
+[8.731567] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/srv/_set_pid_params_s.c\n'}
+[8.731642] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/srv/_set_pid_params.py\n'}
+[8.731718] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/firebot_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.731796] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/_firebot_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[8.731872] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/_firebot_s.ep.rosidl_typesupport_c.c\n'}
+[8.731947] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/firebot_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.732067] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/msg\n'}
+[8.732140] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/msg/__init__.py\n'}
+[8.732212] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/msg/_motor_command.py\n'}
+[8.732280] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/msg/_encoder_data.py\n'}
+[8.732349] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/msg/_encoder_data_s.c\n'}
+[8.732416] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/msg/_motor_command_s.c\n'}
+[8.742622] (-) TimerEvent: {}
+[8.786685] (firebot) StdoutLine: {'line': b"Listing '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot'...\n"}
+[8.786953] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/__init__.py'...\n"}
+[8.787066] (firebot) StdoutLine: {'line': b"Listing '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/msg'...\n"}
+[8.787161] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/msg/__init__.py'...\n"}
+[8.787236] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/msg/_encoder_data.py'...\n"}
+[8.787323] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/msg/_motor_command.py'...\n"}
+[8.787393] (firebot) StdoutLine: {'line': b"Listing '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/srv'...\n"}
+[8.787465] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/srv/__init__.py'...\n"}
+[8.787532] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/srv/_set_pid_params.py'...\n"}
+[8.794548] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/firebot_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.794932] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/firebot_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.795177] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/firebot_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.795507] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/firebot_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.795867] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/firebot_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[8.796101] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot/firebot_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[8.796267] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_generator_py.so\n'}
+[8.796349] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/libfirebot__rosidl_generator_py.so" to ""\n'}
+[8.796431] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/msg/EncoderData.idl\n'}
+[8.796572] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/msg/MotorCommand.idl\n'}
+[8.796702] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/srv/SetPIDParams.idl\n'}
+[8.796778] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/msg/EncoderData.msg\n'}
+[8.796853] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/msg/MotorCommand.msg\n'}
+[8.796926] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/srv/SetPIDParams.srv\n'}
+[8.797051] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/srv/SetPIDParams_Request.msg\n'}
+[8.797128] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/srv/SetPIDParams_Response.msg\n'}
+[8.797196] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/firebot/lidar_node\n'}
+[8.797376] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/firebot/lidar_node" to ""\n'}
+[8.797475] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/firebot/motor_controller\n'}
+[8.797741] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/firebot/motor_controller" to ""\n'}
+[8.797842] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/firebot/odometry_publisher\n'}
+[8.798210] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/firebot/odometry_publisher" to ""\n'}
+[8.798409] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/lib/firebot/tf_broadcaster\n'}
+[8.798556] (firebot) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot/lib/firebot/tf_broadcaster" to ""\n'}
+[8.798636] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py-0.0.1-py3.10.egg-info\n'}
+[8.798759] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py-0.0.1-py3.10.egg-info/SOURCES.txt\n'}
+[8.798866] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py-0.0.1-py3.10.egg-info/dependency_links.txt\n'}
+[8.798950] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py-0.0.1-py3.10.egg-info/PKG-INFO\n'}
+[8.799070] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py-0.0.1-py3.10.egg-info/top_level.txt\n'}
+[8.799149] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py\n'}
+[8.799267] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/navigation_control.py\n'}
+[8.799344] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/serial_bridge.py\n'}
+[8.799452] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/slam_mapping.py\n'}
+[8.799524] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/__init__.py\n'}
+[8.799595] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/lidar_processing.py\n'}
+[8.799696] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/thermal_camera.py\n'}
+[8.842763] (-) TimerEvent: {}
+[8.847275] (firebot) StdoutLine: {'line': b"Listing '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py'...\n"}
+[8.847520] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/__init__.py'...\n"}
+[8.847616] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/lidar_processing.py'...\n"}
+[8.847698] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/navigation_control.py'...\n"}
+[8.847772] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/serial_bridge.py'...\n"}
+[8.847844] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/slam_mapping.py'...\n"}
+[8.847917] (firebot) StdoutLine: {'line': b"Compiling '/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages/firebot_py/thermal_camera.py'...\n"}
+[8.855539] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/launch\n'}
+[8.856090] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/launch/motor_control.launch.py\n'}
+[8.856208] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/launch/serial_bridge.launch.py\n'}
+[8.856306] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/launch/thermal.launch.py\n'}
+[8.856384] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/launch/thermal_camera.launch.py\n'}
+[8.856459] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/launch/bringup.launch.py\n'}
+[8.856537] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/launch/lidar.launch.py\n'}
+[8.856609] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/launch/navigation.launch.py\n'}
+[8.856680] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/launch/slam.launch.py\n'}
+[8.856752] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/config\n'}
+[8.856824] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/config/serial_config.yaml\n'}
+[8.857050] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/config/lidar_config.yaml\n'}
+[8.857283] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/config/nav2_params.yaml\n'}
+[8.857378] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/config/motor_controller.yaml\n'}
+[8.857460] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/config/thermal_camera.yaml\n'}
+[8.857538] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/config/slam_params.yaml\n'}
+[8.857615] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/config/robot_description.urdf\n'}
+[8.857694] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/ament_index/resource_index/package_run_dependencies/firebot\n'}
+[8.857773] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/ament_index/resource_index/parent_prefix_path/firebot\n'}
+[8.857887] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/environment/ament_prefix_path.sh\n'}
+[8.857994] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/environment/ament_prefix_path.dsv\n'}
+[8.858067] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/environment/path.sh\n'}
+[8.858142] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/environment/path.dsv\n'}
+[8.858215] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/local_setup.bash\n'}
+[8.858287] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/local_setup.sh\n'}
+[8.858360] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/local_setup.zsh\n'}
+[8.858433] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/local_setup.dsv\n'}
+[8.858506] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/package.dsv\n'}
+[8.858576] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/ament_index/resource_index/packages/firebot\n'}
+[8.858647] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/export_firebot__rosidl_generator_cExport.cmake\n'}
+[8.858757] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/export_firebot__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.858831] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/export_firebot__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[8.858948] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/export_firebot__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[8.859032] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/export_firebot__rosidl_generator_cppExport.cmake\n'}
+[8.859106] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/export_firebot__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[8.859175] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/export_firebot__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[8.859246] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/firebot__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.859315] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/firebot__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.859419] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/firebot__rosidl_typesupport_cExport.cmake\n'}
+[8.859546] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/firebot__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.859626] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/firebot__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.859727] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/firebot__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.859792] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/firebot__rosidl_typesupport_cppExport.cmake\n'}
+[8.859862] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/firebot__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.859932] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/export_firebot__rosidl_generator_pyExport.cmake\n'}
+[8.860036] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/export_firebot__rosidl_generator_pyExport-noconfig.cmake\n'}
+[8.860113] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/rosidl_cmake-extras.cmake\n'}
+[8.860230] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.860332] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.860415] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.860525] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.860643] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.860722] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.860837] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/firebotConfig.cmake\n'}
+[8.860912] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/cmake/firebotConfig-version.cmake\n'}
+[8.861008] (firebot) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot/share/firebot/package.xml\n'}
+[8.863996] (firebot) CommandEnded: {'returncode': 0}
+[8.891723] (firebot) JobEnded: {'identifier': 'firebot', 'rc': 0}
+[8.892568] (-) EventReactorShutdown: {}

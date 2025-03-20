@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ana/robot_ws/build/firebot/lidar_node" "/home/ana/robot_ws/build/firebot/motor_controller" "/home/ana/robot_ws/build/firebot/odometry_publisher" "/home/ana/robot_ws/build/firebot/tf_broadcaster" "TARGETS" "lidar_node" "motor_controller" "odometry_publisher" "tf_broadcaster" "DESTINATION" "lib/firebot")

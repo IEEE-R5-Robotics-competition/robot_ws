@@ -1,0 +1,39 @@
+[0.000000] (-) TimerEvent: {}
+[0.000350] (-) JobUnselected: {'identifier': 'articubot_one'}
+[0.000688] (-) JobUnselected: {'identifier': 'firebot'}
+[0.000838] (-) JobUnselected: {'identifier': 'firebot_cpp'}
+[0.000934] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.000961] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.000985] (-) JobUnselected: {'identifier': 'serial'}
+[0.001029] (-) JobUnselected: {'identifier': 'test_package'}
+[0.001248] (firebot_py) JobQueued: {'identifier': 'firebot_py', 'dependencies': OrderedDict()}
+[0.001386] (firebot_py) JobStarted: {'identifier': 'firebot_py'}
+[0.099592] (-) TimerEvent: {}
+[0.199966] (-) TimerEvent: {}
+[0.300419] (-) TimerEvent: {}
+[0.400709] (-) TimerEvent: {}
+[0.501086] (-) TimerEvent: {}
+[0.601487] (-) TimerEvent: {}
+[0.669460] (firebot_py) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/ana/robot_ws/build/firebot_py/build', '--no-deps', 'symlink_data'], 'cwd': '/home/ana/robot_ws/build/firebot_py', 'env': {'USER': 'ana', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/ana/robot_ws/install/firebot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'OLDPWD': '/home/ana/robot_ws', 'HOME': '/home/ana', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'ZSH': '/home/ana/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'SYSTEMD_EXEC_PID': '3568', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'COLCON_PREFIX_PATH': '/home/ana/robot_ws/install', 'LOGNAME': 'ana', '_': '/usr/bin/colcon', 'XDG_SESSION_CLASS': 'user', 'ROS_VERSION': '2', 'USERNAME': 'ana', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/ana-XPS-15-9530:@/tmp/.ICE-unix/2246,unix/ana-XPS-15-9530:/tmp/.ICE-unix/2246', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/087009f9_98d9_47fc_9efc_9d4ecb02cbf4', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XDG_SESSION_DESKTOP': 'ubuntu', 'GNOME_TERMINAL_SERVICE': ':1.106', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.CERN32', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'AMENT_PREFIX_PATH': '/home/ana/robot_ws/install/firebot:/opt/ros/humble', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/ana/robot_ws/build/firebot_py', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/ana/robot_ws/build/firebot_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages:/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ana/robot_ws/install/firebot'}, 'shell': False}
+[0.701665] (-) TimerEvent: {}
+[0.802011] (-) TimerEvent: {}
+[0.902319] (-) TimerEvent: {}
+[0.947322] (firebot_py) StdoutLine: {'line': b'running develop\n'}
+[1.002496] (-) TimerEvent: {}
+[1.102837] (-) TimerEvent: {}
+[1.108540] (firebot_py) StdoutLine: {'line': b'running egg_info\n'}
+[1.108714] (firebot_py) StdoutLine: {'line': b'writing firebot_py.egg-info/PKG-INFO\n'}
+[1.108975] (firebot_py) StdoutLine: {'line': b'writing dependency_links to firebot_py.egg-info/dependency_links.txt\n'}
+[1.109125] (firebot_py) StdoutLine: {'line': b'writing entry points to firebot_py.egg-info/entry_points.txt\n'}
+[1.109192] (firebot_py) StdoutLine: {'line': b'writing requirements to firebot_py.egg-info/requires.txt\n'}
+[1.109242] (firebot_py) StdoutLine: {'line': b'writing top-level names to firebot_py.egg-info/top_level.txt\n'}
+[1.111101] (firebot_py) StdoutLine: {'line': b"reading manifest file 'firebot_py.egg-info/SOURCES.txt'\n"}
+[1.111777] (firebot_py) StdoutLine: {'line': b"writing manifest file 'firebot_py.egg-info/SOURCES.txt'\n"}
+[1.113238] (firebot_py) StdoutLine: {'line': b'running build_ext\n'}
+[1.113383] (firebot_py) StdoutLine: {'line': b'Creating /home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages/firebot-py.egg-link (link to .)\n'}
+[1.114236] (firebot_py) StdoutLine: {'line': b'\n'}
+[1.114388] (firebot_py) StdoutLine: {'line': b'Installed /home/ana/robot_ws/build/firebot_py\n'}
+[1.114455] (firebot_py) StdoutLine: {'line': b'running symlink_data\n'}
+[1.148535] (firebot_py) CommandEnded: {'returncode': 0}
+[1.161925] (firebot_py) JobEnded: {'identifier': 'firebot_py', 'rc': 0}
+[1.162968] (-) EventReactorShutdown: {}

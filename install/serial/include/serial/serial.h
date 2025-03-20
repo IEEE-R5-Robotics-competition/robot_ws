@@ -1,1 +1,0 @@
-/home/ana/robot_ws/src/serial/include/serial/serial.h

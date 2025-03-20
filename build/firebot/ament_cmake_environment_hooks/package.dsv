@@ -1,0 +1,4 @@
+source;share/firebot/local_setup.bash
+source;share/firebot/local_setup.dsv
+source;share/firebot/local_setup.sh
+source;share/firebot/local_setup.zsh

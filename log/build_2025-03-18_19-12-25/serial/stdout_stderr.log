@@ -1,0 +1,12 @@
+[35m[1mConsolidate compiler generated dependencies of target gtest[0m
+[35m[1mConsolidate compiler generated dependencies of target serial[0m
+[35m[1mConsolidate compiler generated dependencies of target gtest_main[0m
+[ 14%] Built target gtest
+[ 28%] Built target gtest_main
+[ 57%] Built target serial
+[35m[1mConsolidate compiler generated dependencies of target serial_example[0m
+[35m[1mConsolidate compiler generated dependencies of target serial-test-timer[0m
+[35m[1mConsolidate compiler generated dependencies of target serial-test[0m
+[ 71%] Built target serial_example
+[ 85%] Built target serial-test-timer
+[100%] Built target serial-test

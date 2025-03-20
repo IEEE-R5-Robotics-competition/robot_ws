@@ -1,0 +1,19 @@
+[0.040s] Invoking command in '/home/ana/robot_ws/build/firebot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot -- -j20 -l20
+[0.422s] [  1%] Built target firebot__cpp
+[0.422s] [ 10%] Built target firebot__rosidl_generator_c
+[0.422s] [ 14%] Built target lidar_node
+[0.423s] [ 18%] Built target motor_controller
+[0.423s] [ 21%] Built target tf_broadcaster
+[0.423s] [ 25%] Built target odometry_publisher
+[0.423s] [35m[1mConsolidate compiler generated dependencies of target firebot__rosidl_typesupport_cpp[0m
+[0.423s] [35m[1mConsolidate compiler generated dependencies of target firebot__rosidl_typesupport_fastrtps_cpp[0m
+[0.423s] [35m[1mConsolidate compiler generated dependencies of target firebot__rosidl_typesupport_introspection_cpp[0m
+[0.423s] [ 36%] Built target firebot__rosidl_typesupport_cpp
+[0.424s] [ 43%] Built target firebot__rosidl_typesupport_fastrtps_cpp
+[0.425s] [ 52%] Built target firebot__rosidl_typesupport_introspection_cpp
+[0.425s] failed to create symbolic link '/home/ana/robot_ws/build/firebot/ament_cmake_python/firebot/firebot' because existing path cannot be removed: Is a directory
+[0.425s] gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_firebot.dir/build.make:70: CMakeFiles/ament_cmake_python_symlink_firebot] Error 1
+[0.425s] gmake[1]: *** [CMakeFiles/Makefile2:429: CMakeFiles/ament_cmake_python_symlink_firebot.dir/all] Error 2
+[0.425s] gmake[1]: *** Waiting for unfinished jobs....
+[0.425s] gmake: *** [Makefile:146: all] Error 2
+[0.432s] Invoked command in '/home/ana/robot_ws/build/firebot' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot -- -j20 -l20

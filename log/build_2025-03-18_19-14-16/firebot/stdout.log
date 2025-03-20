@@ -1,0 +1,12 @@
+[  1%] Built target firebot__cpp
+[ 10%] Built target firebot__rosidl_generator_c
+[ 14%] Built target lidar_node
+[ 18%] Built target motor_controller
+[ 21%] Built target tf_broadcaster
+[ 25%] Built target odometry_publisher
+[35m[1mConsolidate compiler generated dependencies of target firebot__rosidl_typesupport_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target firebot__rosidl_typesupport_fastrtps_cpp[0m
+[35m[1mConsolidate compiler generated dependencies of target firebot__rosidl_typesupport_introspection_cpp[0m
+[ 36%] Built target firebot__rosidl_typesupport_cpp
+[ 43%] Built target firebot__rosidl_typesupport_fastrtps_cpp
+[ 52%] Built target firebot__rosidl_typesupport_introspection_cpp

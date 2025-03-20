@@ -4,9 +4,7 @@ FROM ros:humble
 # Set up the environment
 ENV ROS_DISTRO=humble
 
-# (Do not add the repository manually as the base image already configures it)
-
-# Update package lists and install ROS 2 packages including your original build commands.
+# Update package lists and install ROS 2 packages
 RUN apt-get update && apt-get install -y \
     ros-$ROS_DISTRO-ros-base \
     ros-$ROS_DISTRO-rmw-fastrtps-cpp \
@@ -26,7 +24,7 @@ RUN apt-get update && apt-get install -y \
     # ros-$ROS_DISTRO-dwa-local-planner \
     # ros-$ROS_DISTRO-serial \
     # ros-$ROS_DISTRO-i2c-tools \
-    # python3-pyserial \
+    # python3-serial \
     ros-$ROS_DISTRO-rosbridge-server \
     ros-$ROS_DISTRO-rplidar-ros \
     ros-$ROS_DISTRO-robot-localization \
@@ -53,19 +51,19 @@ RUN apt-get update && apt-get install -y \
     rm -rf /var/lib/apt/lists/*
 
 # Resolve any missing dependencies.
-# The "|| true" lets the build continue even if rosdep can't install some testing/development packages.
 RUN rosdep update && rosdep install --from-paths /opt/ros/$ROS_DISTRO/share --ignore-src -r -y || true
 
-# Install python3-pyserial separately (if needed)
-RUN apt-get update && apt-get install -y python3-pyserial && rm -rf /var/lib/apt/lists/*
+# Install python3-serial separately (this is the correct package name)
+RUN apt-get update && apt-get install -y python3-serial && rm -rf /var/lib/apt/lists/*
 
-# Set the working directory to your ROS workspace (assumed to be robot_ws)
+# Set the working directory to your ROS workspace
 WORKDIR /robot_ws
-# Copy your workspace source code into the container
-COPY . /robot_ws
 
-# Source the ROS 2 environment and build the workspace using colcon.
+# Copy only the source code, not the build files
+COPY ./src /robot_ws/src
+
+# Build the workspace using colcon
 RUN . /opt/ros/$ROS_DISTRO/setup.sh && colcon build --symlink-install
 
-# Set the default command to source both the ROS environment and your workspace's install setup.
+# Set the default command
 CMD ["bash", "-c", "source /opt/ros/$ROS_DISTRO/setup.bash && source /robot_ws/install/setup.bash && exec bash"]
