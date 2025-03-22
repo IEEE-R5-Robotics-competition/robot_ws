@@ -39,8 +39,11 @@ RUN apt-get update && apt-get install -y \
     ros-$ROS_DISTRO-nav2-bringup \
     ros-$ROS_DISTRO-navigation2 \
     ros-$ROS_DISTRO-serial-driver \
+    ros-$ROS_DISTRO-ros2-control \
+    ros-$ROS_DISTRO-ros2-controllers \
     ros-$ROS_DISTRO-rviz2 \
     ros-$ROS_DISTRO-rplidar-ros \
+    libserial-dev \
     python3-pip \
     python3-rosdep \
     python3-colcon-common-extensions \

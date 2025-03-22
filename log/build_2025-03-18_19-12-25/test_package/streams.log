@@ -1,3 +1,0 @@
-[0.364s] Invoking command in '/home/ana/robot_ws/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/test_package -- -j20 -l20
-[0.437s] [35m[1mConsolidate compiler generated dependencies of target my_publisher[0m
-[0.471s] [100%] Built target my_publisher

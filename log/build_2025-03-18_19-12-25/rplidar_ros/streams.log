@@ -1,7 +1,0 @@
-[0.363s] Invoking command in '/home/ana/robot_ws/build/rplidar_ros': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/rplidar_ros -- -j20 -l20
-[0.422s] [35m[1mConsolidate compiler generated dependencies of target rplidar_client[0m
-[0.431s] [35m[1mConsolidate compiler generated dependencies of target rplidar_node[0m
-[0.438s] [35m[1mConsolidate compiler generated dependencies of target rplidar_composition[0m
-[0.455s] [  5%] Built target rplidar_client
-[0.491s] [ 52%] Built target rplidar_node
-[0.496s] [100%] Built target rplidar_composition

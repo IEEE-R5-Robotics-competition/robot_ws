@@ -2,6 +2,7 @@ package.xml
 setup.cfg
 setup.py
 firebot_py/__init__.py
+firebot_py/lidar_node.py
 firebot_py/lidar_processing.py
 firebot_py/navigation_control.py
 firebot_py/serial_bridge.py

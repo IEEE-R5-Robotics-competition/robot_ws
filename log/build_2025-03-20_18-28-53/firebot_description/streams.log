@@ -1,0 +1,53 @@
+[0.082s] Invoking command in '/home/ana/robot_ws/build/firebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/opt/ros/humble /usr/bin/cmake /home/ana/robot_ws/src/firebot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/firebot_description
+[1.364s] -- The C compiler identification is GNU 11.4.0
+[1.365s] -- The CXX compiler identification is GNU 11.4.0
+[1.365s] -- Detecting C compiler ABI info
+[1.367s] -- Detecting C compiler ABI info - done
+[1.369s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.370s] -- Detecting C compile features
+[1.371s] -- Detecting C compile features - done
+[1.372s] -- Detecting CXX compiler ABI info
+[1.372s] -- Detecting CXX compiler ABI info - done
+[1.372s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.372s] -- Detecting CXX compile features
+[1.372s] -- Detecting CXX compile features - done
+[1.373s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.373s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.373s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.379s] -- Found xacro: 2.0.8 (/opt/ros/humble/share/xacro/cmake)
+[1.380s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.654s] -- Added test 'flake8' to check Python code syntax and style conventions
+[1.655s] -- Added test 'lint_cmake' to check CMake code style
+[1.661s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[1.664s] -- Added test 'xmllint' to check XML markup files
+[1.667s] -- Configuring done
+[1.678s] -- Generating done
+[1.685s] -- Build files have been written to: /home/ana/robot_ws/build/firebot_description
+[1.696s] Invoked command in '/home/ana/robot_ws/build/firebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/opt/ros/humble /usr/bin/cmake /home/ana/robot_ws/src/firebot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/firebot_description
+[1.700s] Invoking command in '/home/ana/robot_ws/build/firebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot_description -- -j20 -l20
+[1.803s] Invoked command in '/home/ana/robot_ws/build/firebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot_description -- -j20 -l20
+[1.808s] Invoking command in '/home/ana/robot_ws/build/firebot_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/firebot_description
+[1.829s] -- Install configuration: ""
+[1.830s] -- Execute custom install script
+[1.833s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/launch/robot_state_publisher.launch.py
+[1.856s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/gazebo_control.xacro
+[1.877s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/inertial_macros.xacro
+[1.898s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/robot.urdf.xacro
+[1.921s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/robot_core.xacro
+[1.953s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/ros2_control.xacro
+[1.980s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/ament_index/resource_index/package_run_dependencies/firebot_description
+[2.005s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/ament_index/resource_index/parent_prefix_path/firebot_description
+[2.030s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/environment/ament_prefix_path.sh
+[2.061s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/environment/ament_prefix_path.dsv
+[2.090s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/environment/path.sh
+[2.120s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/environment/path.dsv
+[2.144s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/local_setup.bash
+[2.173s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/local_setup.sh
+[2.198s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/local_setup.zsh
+[2.225s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/local_setup.dsv
+[2.254s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/package.dsv
+[2.278s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/ament_index/resource_index/packages/firebot_description
+[2.318s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/cmake/firebot_descriptionConfig.cmake
+[2.353s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/cmake/firebot_descriptionConfig-version.cmake
+[2.386s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/package.xml
+[2.424s] Invoked command in '/home/ana/robot_ws/build/firebot_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/firebot_description

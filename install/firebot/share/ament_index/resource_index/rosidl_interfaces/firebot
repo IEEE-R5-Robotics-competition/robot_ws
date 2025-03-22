@@ -1,8 +1,0 @@
-msg/EncoderData.idl
-msg/EncoderData.msg
-msg/MotorCommand.idl
-msg/MotorCommand.msg
-srv/SetPIDParams.idl
-srv/SetPIDParams.srv
-srv/SetPIDParams_Request.msg
-srv/SetPIDParams_Response.msg

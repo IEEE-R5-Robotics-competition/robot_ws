@@ -1,4 +1,5 @@
 [console_scripts]
+lidar_node = firebot_py.lidar_node:main
 lidar_processing = firebot_py.lidar_processing:main
 navigation_control = firebot_py.navigation_control:main
 serial_bridge = firebot_py.serial_bridge:main

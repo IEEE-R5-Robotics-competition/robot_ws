@@ -1,0 +1,28 @@
+[2.840s] Invoking command in '/home/ana/robot_ws/build/firebot_py': PYTHONPATH=/home/ana/robot_ws/build/firebot_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ana/robot_ws/build/firebot_py/build --no-deps symlink_data
+[3.614s] running develop
+[4.326s] running egg_info
+[4.326s] creating firebot_py.egg-info
+[4.327s] writing firebot_py.egg-info/PKG-INFO
+[4.328s] writing dependency_links to firebot_py.egg-info/dependency_links.txt
+[4.329s] writing entry points to firebot_py.egg-info/entry_points.txt
+[4.330s] writing requirements to firebot_py.egg-info/requires.txt
+[4.331s] writing top-level names to firebot_py.egg-info/top_level.txt
+[4.332s] writing manifest file 'firebot_py.egg-info/SOURCES.txt'
+[4.341s] reading manifest file 'firebot_py.egg-info/SOURCES.txt'
+[4.344s] writing manifest file 'firebot_py.egg-info/SOURCES.txt'
+[4.350s] running build_ext
+[4.351s] Creating /home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages/firebot-py.egg-link (link to .)
+[4.355s] Installing lidar_node script to /home/ana/robot_ws/install/firebot_py/lib/firebot_py
+[4.356s] Installing lidar_processing script to /home/ana/robot_ws/install/firebot_py/lib/firebot_py
+[4.357s] Installing navigation_control script to /home/ana/robot_ws/install/firebot_py/lib/firebot_py
+[4.358s] Installing serial_bridge script to /home/ana/robot_ws/install/firebot_py/lib/firebot_py
+[4.358s] Installing thermal_camera script to /home/ana/robot_ws/install/firebot_py/lib/firebot_py
+[4.359s] 
+[4.359s] Installed /home/ana/robot_ws/build/firebot_py
+[4.360s] running symlink_data
+[4.360s] creating /home/ana/robot_ws/install/firebot_py/share/ament_index
+[4.360s] creating /home/ana/robot_ws/install/firebot_py/share/ament_index/resource_index
+[4.361s] creating /home/ana/robot_ws/install/firebot_py/share/ament_index/resource_index/packages
+[4.361s] symbolically linking /home/ana/robot_ws/build/firebot_py/resource/firebot_py -> /home/ana/robot_ws/install/firebot_py/share/ament_index/resource_index/packages
+[4.362s] symbolically linking /home/ana/robot_ws/build/firebot_py/package.xml -> /home/ana/robot_ws/install/firebot_py/share/firebot_py
+[4.528s] Invoked command in '/home/ana/robot_ws/build/firebot_py' returned '0': PYTHONPATH=/home/ana/robot_ws/build/firebot_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ana/robot_ws/build/firebot_py/build --no-deps symlink_data

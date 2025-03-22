@@ -1,0 +1,1 @@
+/home/ana/robot_ws/build/firebot_description/ament_cmake_environment_hooks/local_setup.zsh

@@ -1,7 +1,0 @@
-[0.400s] Invoking command in '/home/ana/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/serial -- -j20 -l20
-[0.486s] [ 42%] Built target gtest
-[0.486s] [ 42%] Built target serial
-[0.490s] [ 57%] Built target gtest_main
-[0.529s] [ 71%] Built target serial_example
-[0.535s] [ 85%] Built target serial-test
-[0.535s] [100%] Built target serial-test-timer

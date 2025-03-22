@@ -1,0 +1,164 @@
+[0.000000] (-) TimerEvent: {}
+[0.000293] (-) JobUnselected: {'identifier': 'articubot_one'}
+[0.000349] (-) JobUnselected: {'identifier': 'firebot_cpp'}
+[0.000381] (-) JobUnselected: {'identifier': 'firebot_description'}
+[0.000408] (-) JobUnselected: {'identifier': 'firebot_py'}
+[0.000433] (-) JobUnselected: {'identifier': 'py_pubsub'}
+[0.000459] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.000483] (-) JobUnselected: {'identifier': 'serial'}
+[0.000508] (-) JobUnselected: {'identifier': 'test_package'}
+[0.000538] (firebot_hardware_interface) JobQueued: {'identifier': 'firebot_hardware_interface', 'dependencies': OrderedDict()}
+[0.000580] (firebot_hardware_interface) JobStarted: {'identifier': 'firebot_hardware_interface'}
+[0.013837] (firebot_hardware_interface) JobProgress: {'identifier': 'firebot_hardware_interface', 'progress': 'cmake'}
+[0.014559] (firebot_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/ana/robot_ws/src/firebot_hardware_interface', '-DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/firebot_hardware_interface'], 'cwd': '/home/ana/robot_ws/build/firebot_hardware_interface', 'env': OrderedDict([('USER', 'ana'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ana/robot_ws/install/firebot_hardware_interface/lib:/home/ana/robot_ws/install/serial/lib:/home/ana/robot_ws/install/firebot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ana/robot_ws'), ('HOME', '/home/ana'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/ana/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '4169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ana/robot_ws/install'), ('LOGNAME', 'ana'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ana'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ana-XPS-15-9530:@/tmp/.ICE-unix/2282,unix/ana-XPS-15-9530:/tmp/.ICE-unix/2282'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/159f9975_0a6a_4c1e_ae3f_8ad4f36e5e24'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A6FF32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/ana/robot_ws/install/firebot_hardware_interface:/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/home/ana/robot_ws/install/firebot_description:/home/ana/robot_ws/install/firebot_cpp:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ana/robot_ws/build/firebot_hardware_interface'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ana/robot_ws/build/py_pubsub:/home/ana/robot_ws/install/py_pubsub/lib/python3.10/site-packages:/home/ana/robot_ws/build/firebot_py:/home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages:/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ana/robot_ws/install/firebot_hardware_interface:/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/firebot_description:/home/ana/robot_ws/install/firebot_cpp:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/opt/ros/humble')]), 'shell': False}
+[0.098026] (-) TimerEvent: {}
+[0.129673] (firebot_hardware_interface) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.198223] (-) TimerEvent: {}
+[0.273488] (firebot_hardware_interface) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.291476] (firebot_hardware_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.298398] (-) TimerEvent: {}
+[0.399060] (-) TimerEvent: {}
+[0.485770] (firebot_hardware_interface) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.499257] (-) TimerEvent: {}
+[0.506575] (firebot_hardware_interface) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.507411] (firebot_hardware_interface) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.508561] (firebot_hardware_interface) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.516538] (firebot_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.599440] (-) TimerEvent: {}
+[0.700058] (-) TimerEvent: {}
+[0.711752] (firebot_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.728927] (firebot_hardware_interface) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.729560] (firebot_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.730448] (firebot_hardware_interface) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.736027] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.800205] (-) TimerEvent: {}
+[0.900751] (-) TimerEvent: {}
+[1.001305] (-) TimerEvent: {}
+[1.061733] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[1.101477] (-) TimerEvent: {}
+[1.202040] (-) TimerEvent: {}
+[1.242145] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.302303] (-) TimerEvent: {}
+[1.307951] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.314918] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.326627] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.344864] (firebot_hardware_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.371071] (firebot_hardware_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.402567] (-) TimerEvent: {}
+[1.437611] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.441979] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.502842] (-) TimerEvent: {}
+[1.577361] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.603023] (-) TimerEvent: {}
+[1.619884] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.686038] (firebot_hardware_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.699047] (firebot_hardware_interface) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.703091] (-) TimerEvent: {}
+[1.803373] (-) TimerEvent: {}
+[1.813695] (firebot_hardware_interface) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.814361] (firebot_hardware_interface) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.903533] (-) TimerEvent: {}
+[1.934604] (firebot_hardware_interface) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.936497] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[2.003669] (-) TimerEvent: {}
+[2.014379] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found rclcpp_lifecycle: 16.0.11 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)\n'}
+[2.042603] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found hardware_interface: 2.48.0 (/opt/ros/humble/share/hardware_interface/cmake)\n'}
+[2.103792] (-) TimerEvent: {}
+[2.204270] (-) TimerEvent: {}
+[2.238509] (firebot_hardware_interface) StdoutLine: {'line': b'-- Found controller_interface: 2.48.0 (/opt/ros/humble/share/controller_interface/cmake)\n'}
+[2.304409] (-) TimerEvent: {}
+[2.361791] (firebot_hardware_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.393844] (firebot_hardware_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[2.401127] (firebot_hardware_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/ana/robot_ws/build/firebot_hardware_interface\n'}
+[2.404575] (-) TimerEvent: {}
+[2.415987] (firebot_hardware_interface) CommandEnded: {'returncode': 0}
+[2.419380] (firebot_hardware_interface) JobProgress: {'identifier': 'firebot_hardware_interface', 'progress': 'build'}
+[2.419557] (firebot_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/ana/robot_ws/build/firebot_hardware_interface', '--', '-j20', '-l20'], 'cwd': '/home/ana/robot_ws/build/firebot_hardware_interface', 'env': OrderedDict([('USER', 'ana'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ana/robot_ws/install/firebot_hardware_interface/lib:/home/ana/robot_ws/install/serial/lib:/home/ana/robot_ws/install/firebot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ana/robot_ws'), ('HOME', '/home/ana'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/ana/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '4169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ana/robot_ws/install'), ('LOGNAME', 'ana'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ana'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ana-XPS-15-9530:@/tmp/.ICE-unix/2282,unix/ana-XPS-15-9530:/tmp/.ICE-unix/2282'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/159f9975_0a6a_4c1e_ae3f_8ad4f36e5e24'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A6FF32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/ana/robot_ws/install/firebot_hardware_interface:/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/home/ana/robot_ws/install/firebot_description:/home/ana/robot_ws/install/firebot_cpp:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ana/robot_ws/build/firebot_hardware_interface'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ana/robot_ws/build/py_pubsub:/home/ana/robot_ws/install/py_pubsub/lib/python3.10/site-packages:/home/ana/robot_ws/build/firebot_py:/home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages:/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ana/robot_ws/install/firebot_hardware_interface:/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/firebot_description:/home/ana/robot_ws/install/firebot_cpp:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/opt/ros/humble')]), 'shell': False}
+[2.498366] (firebot_hardware_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/firebot_hardware_interface.dir/src/firebot_hardware_interface.cpp.o\x1b[0m\n'}
+[2.504709] (-) TimerEvent: {}
+[2.605145] (-) TimerEvent: {}
+[2.705675] (-) TimerEvent: {}
+[2.806195] (-) TimerEvent: {}
+[2.906712] (-) TimerEvent: {}
+[3.007273] (-) TimerEvent: {}
+[3.107753] (-) TimerEvent: {}
+[3.208230] (-) TimerEvent: {}
+[3.308584] (-) TimerEvent: {}
+[3.408966] (-) TimerEvent: {}
+[3.509376] (-) TimerEvent: {}
+[3.609820] (-) TimerEvent: {}
+[3.710192] (-) TimerEvent: {}
+[3.810567] (-) TimerEvent: {}
+[3.910964] (-) TimerEvent: {}
+[4.011320] (-) TimerEvent: {}
+[4.111735] (-) TimerEvent: {}
+[4.212143] (-) TimerEvent: {}
+[4.312632] (-) TimerEvent: {}
+[4.413062] (-) TimerEvent: {}
+[4.513546] (-) TimerEvent: {}
+[4.614002] (-) TimerEvent: {}
+[4.714376] (-) TimerEvent: {}
+[4.814865] (-) TimerEvent: {}
+[4.915264] (-) TimerEvent: {}
+[5.015757] (-) TimerEvent: {}
+[5.116182] (-) TimerEvent: {}
+[5.216527] (-) TimerEvent: {}
+[5.316916] (-) TimerEvent: {}
+[5.417351] (-) TimerEvent: {}
+[5.517849] (-) TimerEvent: {}
+[5.618328] (-) TimerEvent: {}
+[5.718782] (-) TimerEvent: {}
+[5.819250] (-) TimerEvent: {}
+[5.919696] (-) TimerEvent: {}
+[6.020106] (-) TimerEvent: {}
+[6.120555] (-) TimerEvent: {}
+[6.221019] (-) TimerEvent: {}
+[6.321508] (-) TimerEvent: {}
+[6.421987] (-) TimerEvent: {}
+[6.522456] (-) TimerEvent: {}
+[6.622880] (-) TimerEvent: {}
+[6.723236] (-) TimerEvent: {}
+[6.823685] (-) TimerEvent: {}
+[6.924075] (-) TimerEvent: {}
+[7.024408] (-) TimerEvent: {}
+[7.124834] (-) TimerEvent: {}
+[7.222408] (firebot_hardware_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libfirebot_hardware_interface.so\x1b[0m\n'}
+[7.225032] (-) TimerEvent: {}
+[7.325319] (-) TimerEvent: {}
+[7.425638] (-) TimerEvent: {}
+[7.466000] (firebot_hardware_interface) StdoutLine: {'line': b'[100%] Built target firebot_hardware_interface\n'}
+[7.483930] (firebot_hardware_interface) CommandEnded: {'returncode': 0}
+[7.485690] (firebot_hardware_interface) JobProgress: {'identifier': 'firebot_hardware_interface', 'progress': 'install'}
+[7.498707] (firebot_hardware_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/ana/robot_ws/build/firebot_hardware_interface'], 'cwd': '/home/ana/robot_ws/build/firebot_hardware_interface', 'env': OrderedDict([('USER', 'ana'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/ana/robot_ws/install/firebot_hardware_interface/lib:/home/ana/robot_ws/install/serial/lib:/home/ana/robot_ws/install/firebot/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('OLDPWD', '/home/ana/robot_ws'), ('HOME', '/home/ana'), ('LESS', '-R'), ('DESKTOP_SESSION', 'ubuntu'), ('ZSH', '/home/ana/.oh-my-zsh'), ('LSCOLORS', 'Gxfxcxdxbxegedabagacad'), ('GTK_MODULES', 'gail:atk-bridge'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('PAGER', 'less'), ('ROS_PYTHON_VERSION', '3'), ('SYSTEMD_EXEC_PID', '4169'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/ana/robot_ws/install'), ('LOGNAME', 'ana'), ('_', '/usr/bin/colcon'), ('XDG_SESSION_CLASS', 'user'), ('ROS_VERSION', '2'), ('USERNAME', 'ana'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/ana-XPS-15-9530:@/tmp/.ICE-unix/2282,unix/ana-XPS-15-9530:/tmp/.ICE-unix/2282'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/159f9975_0a6a_4c1e_ae3f_8ad4f36e5e24'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('GNOME_TERMINAL_SERVICE', ':1.110'), ('XMODIFIERS', '@im=ibus'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.A6FF32'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('AMENT_PREFIX_PATH', '/home/ana/robot_ws/install/firebot_hardware_interface:/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/home/ana/robot_ws/install/firebot_description:/home/ana/robot_ws/install/firebot_cpp:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/opt/ros/humble'), ('SHELL', '/usr/bin/zsh'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/ana/robot_ws/build/firebot_hardware_interface'), ('XDG_DATA_DIRS', '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/ana/robot_ws/build/py_pubsub:/home/ana/robot_ws/install/py_pubsub/lib/python3.10/site-packages:/home/ana/robot_ws/build/firebot_py:/home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages:/home/ana/robot_ws/install/firebot/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/ana/robot_ws/install/firebot_hardware_interface:/home/ana/robot_ws/install/test_package:/home/ana/robot_ws/install/serial:/home/ana/robot_ws/install/rplidar_ros:/home/ana/robot_ws/install/firebot_description:/home/ana/robot_ws/install/firebot_cpp:/home/ana/robot_ws/install/firebot:/home/ana/robot_ws/install/articubot_one:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py:/opt/ros/humble')]), 'shell': False}
+[7.509438] (firebot_hardware_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.509638] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/firebot_hardware_interface.xml\n'}
+[7.509832] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/lib/libfirebot_hardware_interface.so\n'}
+[7.511508] (firebot_hardware_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/ana/robot_ws/install/firebot_hardware_interface/lib/libfirebot_hardware_interface.so" to ""\n'}
+[7.511866] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/launch\n'}
+[7.512002] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/launch/test_hardware_interface.launch.py\n'}
+[7.512096] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/config\n'}
+[7.512181] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/config/controllers.yaml\n'}
+[7.512354] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/include\n'}
+[7.512477] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/include/firebot_hardware_interface\n'}
+[7.512577] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/include/firebot_hardware_interface/firebot_hardware_interface.hpp\n'}
+[7.512666] (firebot_hardware_interface) StdoutLine: {'line': b'-- Up-to-date: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/firebot_hardware_interface.xml\n'}
+[7.512750] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/ament_index/resource_index/package_run_dependencies/firebot_hardware_interface\n'}
+[7.512917] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/ament_index/resource_index/parent_prefix_path/firebot_hardware_interface\n'}
+[7.513125] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/environment/ament_prefix_path.sh\n'}
+[7.513249] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/environment/ament_prefix_path.dsv\n'}
+[7.513330] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/environment/path.sh\n'}
+[7.513409] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/environment/path.dsv\n'}
+[7.513487] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/local_setup.bash\n'}
+[7.513618] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/local_setup.sh\n'}
+[7.513704] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/local_setup.zsh\n'}
+[7.513783] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/local_setup.dsv\n'}
+[7.513906] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/package.dsv\n'}
+[7.514009] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/ament_index/resource_index/packages/firebot_hardware_interface\n'}
+[7.514117] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/ament_index/resource_index/hardware_interface__pluginlib__plugin/firebot_hardware_interface\n'}
+[7.514239] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/cmake/firebot_hardware_interfaceConfig.cmake\n'}
+[7.514316] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/cmake/firebot_hardware_interfaceConfig-version.cmake\n'}
+[7.514424] (firebot_hardware_interface) StdoutLine: {'line': b'-- Installing: /home/ana/robot_ws/install/firebot_hardware_interface/share/firebot_hardware_interface/package.xml\n'}
+[7.517592] (firebot_hardware_interface) CommandEnded: {'returncode': 0}
+[7.525861] (-) TimerEvent: {}
+[7.543101] (firebot_hardware_interface) JobEnded: {'identifier': 'firebot_hardware_interface', 'rc': 0}
+[7.543994] (-) EventReactorShutdown: {}
