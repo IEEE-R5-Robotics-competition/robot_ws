@@ -23,7 +23,8 @@ setup(
             'serial_bridge = firebot_py.serial_bridge:main',
             'thermal_camera = firebot_py.thermal_camera:main',
             'lidar_processing = firebot_py.lidar_processing:main',
-            'navigation_control = firebot_py.navigation_control:main'
+            'navigation_control = firebot_py.navigation_control:main',
+            'lidar_node = firebot_py.lidar_node:main',
         ],
     },
 )

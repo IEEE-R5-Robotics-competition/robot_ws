@@ -161,12 +161,6 @@ int runCommand() {
   arg1 = atoi(argv1);
   arg2 = atoi(argv2);
   // Debug: Print parsed arguments
-  Serial.print("Running command: ");
-  Serial.print(cmd);
-  Serial.print(" | arg1: ");
-  Serial.print(arg1);
-  Serial.print(" | arg2: ");
-  Serial.println(arg2);
   switch(cmd) {
   case GET_BAUDRATE:
     Serial.println(BAUDRATE);
@@ -218,8 +212,6 @@ int runCommand() {
   case MOTOR_SPEEDS:
     /* Reset the auto stop timer */
     lastMotorCommand = millis();
-    Serial.print("lastMotorCommand updated to: ");
-    Serial.println(lastMotorCommand);
     if (arg1 == 0 && arg2 == 0) {
     setMotorSpeeds(0, 0);
     resetPID();
@@ -229,17 +221,13 @@ int runCommand() {
     }
     leftPID.TargetTicksPerFrame = arg1;
     rightPID.TargetTicksPerFrame = arg2;
-    Serial.println("OK");
     break;
   case MOTOR_RAW_PWM:
     /* Reset the auto stop timer */
     lastMotorCommand = millis();
-    Serial.print("lastMotorCommand updated to: ");
-  Serial.println(lastMotorCommand);
     resetPID();
     moving = 0; // Sneaky way to temporarily disable the PID
     setMotorSpeeds(arg1, arg2);
-    Serial.println("OK"); 
     break;
   case UPDATE_PID:
     while ((*(str = strtok_r(p, ":", &p))) != '\0') {
@@ -250,7 +238,6 @@ int runCommand() {
     Kd = pid_args[1];
     Ki = pid_args[2];
     Ko = pid_args[3];
-    Serial.println("OK");
     break;
 #endif
   default:
@@ -262,9 +249,7 @@ int runCommand() {
 /* Setup function--runs once at startup. */
 void setup() {
   Serial.begin(BAUDRATE);
-  Serial.println("Initializing motor controller...");
   initMotorController();
-  Serial.println("Motor controller initialized.");
 
 // Initialize the motor controller if used */
 #ifdef USE_BASE
@@ -324,12 +309,6 @@ while (Serial.available() > 0) {
 
       // Only process the command if `cmd` is not null
       if (cmd != '\0') {
-        Serial.print("Parsed command: ");
-        Serial.print(cmd);
-        Serial.print(" ");
-        Serial.print(argv1);
-        Serial.print(" ");
-        Serial.println(argv2);
         runCommand();
       }
 

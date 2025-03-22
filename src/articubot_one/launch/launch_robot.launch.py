@@ -57,20 +57,11 @@ def generate_launch_description():
                     controller_params_file]
     )
 
-    teleop_node = Node(
-        package='teleop_twist_keyboard',
-        executable='teleop_twist_keyboard',
-        name='teleop_keyboard',
-        prefix='xterm -e',  # This opens the teleop in a new terminal
-        output='screen',
-        remappings=[('/cmd_vel', '/cmd_vel_keyboard')]  # Make sure this matches your twist_mux configuration
-    )
-
     delayed_controller_manager = TimerAction(period=3.0, actions=[controller_manager])
 
     diff_drive_spawner = Node(
         package="controller_manager",
-        executable="spawner.py",
+        executable="spawner",
         arguments=["diff_cont"],
     )
 
@@ -83,7 +74,7 @@ def generate_launch_description():
 
     joint_broad_spawner = Node(
         package="controller_manager",
-        executable="spawner.py",
+        executable="spawner",
         arguments=["joint_broad"],
     )
 
@@ -118,7 +109,6 @@ def generate_launch_description():
         rsp,
         # joystick,
         twist_mux,
-        teleop_node,
         delayed_controller_manager,
         delayed_diff_drive_spawner,
         delayed_joint_broad_spawner

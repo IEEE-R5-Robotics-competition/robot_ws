@@ -17,11 +17,9 @@ import os
 from ament_index_python.packages import get_package_share_directory
 
 from launch import LaunchDescription
-from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable, LogInfo
+from launch.actions import DeclareLaunchArgument, SetEnvironmentVariable
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
-from launch_ros.substitutions import FindPackageShare
-from nav2_common.launch import RewrittenYaml
 from nav2_common.launch import RewrittenYaml
 
 
@@ -81,9 +79,6 @@ def generate_launch_description():
             'params_file',
             default_value=os.path.join(bringup_dir, 'config', 'nav2_params.yaml'),
             description='Full path to the ROS2 parameters file to use'),
-
-        LogInfo(msg=['Using map file: ', map_yaml_file]),
-        LogInfo(msg=['Using params file: ', params_file]),
 
         Node(
             package='nav2_map_server',

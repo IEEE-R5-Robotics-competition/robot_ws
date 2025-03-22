@@ -13,10 +13,12 @@ class SerialBridge(Node):
         # Attempt to open the serial port
         try:
             self.ser = serial.Serial(self.port, self.baudrate, timeout=1)
+            self.ser.setDTR(True)  # Disable auto-reset
             self.get_logger().info(f'Opened serial port: {self.port} at {self.baudrate} baud.')
         except Exception as e:
             self.get_logger().error(f'Failed to open serial port {self.port}: {e}')
             self.ser = None
+
 
         # Subscribe to a topic to send messages out over serial
         self.subscription = self.create_subscription(
