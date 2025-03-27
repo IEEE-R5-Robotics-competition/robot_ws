@@ -1,0 +1,1 @@
+/home/ana/robot_ws/build/firebot_py/launch/firebot_nav2.launch.py

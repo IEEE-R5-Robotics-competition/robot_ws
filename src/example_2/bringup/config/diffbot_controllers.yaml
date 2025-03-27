@@ -1,6 +1,6 @@
 controller_manager:
   ros__parameters:
-    update_rate: 10  # Hz
+    update_rate: 30  # Hz
 
     joint_state_broadcaster:
       type: joint_state_broadcaster/JointStateBroadcaster
@@ -10,9 +10,11 @@ controller_manager:
     
     use_stamped_vel: false
     cmd_vel_topic: cmd_vel
+    cmd_vel_msg_type: geometry_msgs/msg/Twist  # Explicitly specify unstamped Twist
 
 diffbot_base_controller:
   ros__parameters:
+    cmd_vel_msg_type: geometry_msgs/msg/Twist
     left_wheel_names: ["left_wheel_joint"]
     right_wheel_names: ["right_wheel_joint"]
 

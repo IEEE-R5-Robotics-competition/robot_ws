@@ -50,7 +50,7 @@ def generate_launch_description():
             PathJoinSubstitution([FindExecutable(name="xacro")]),
             " ",
             PathJoinSubstitution(
-                [FindPackageShare("ros2_control_demo_example_2"), "urdf", "diffbot.urdf.xacro"]
+                [FindPackageShare("firebot_description"), "urdf", "robot.urdf.xacro"]
             ),
             " ",
             "use_mock_hardware:=",
@@ -66,9 +66,7 @@ def generate_launch_description():
             "diffbot_controllers.yaml",
         ]
     )
-    rviz_config_file = PathJoinSubstitution(
-        [FindPackageShare("ros2_control_demo_description"), "diffbot/rviz", "diffbot.rviz"]
-    )
+    rviz_config_file = 'src/firebot_py/config/display.rviz'
 
     control_node = Node(
         package="controller_manager",
@@ -77,7 +75,7 @@ def generate_launch_description():
         output="both",
         remappings=[
             ("~/robot_description", "/robot_description"),
-            ("/diffbot_base_controller/cmd_vel", "/cmd_vel"),
+            ("/diffbot_base_controller/cmd_vel", "/diffbot_base_controller/cmd_vel_stamped"),
         ],
     )
     robot_state_pub_node = Node(

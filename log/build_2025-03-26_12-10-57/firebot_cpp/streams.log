@@ -1,0 +1,66 @@
+[0.060s] Invoking command in '/home/ana/robot_ws/build/firebot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake /home/ana/robot_ws/src/firebot_cpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/firebot_cpp
+[1.035s] -- The C compiler identification is GNU 11.4.0
+[1.036s] -- The CXX compiler identification is GNU 11.4.0
+[1.036s] -- Detecting C compiler ABI info
+[1.037s] -- Detecting C compiler ABI info - done
+[1.037s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.038s] -- Detecting C compile features
+[1.040s] -- Detecting C compile features - done
+[1.040s] -- Detecting CXX compiler ABI info
+[1.041s] -- Detecting CXX compiler ABI info - done
+[1.041s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.041s] -- Detecting CXX compile features
+[1.041s] -- Detecting CXX compile features - done
+[1.041s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.042s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[1.121s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[1.220s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[1.353s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[1.370s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[1.397s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[1.447s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.500s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.648s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.659s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.972s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.086s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.256s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.291s] -- Looking for pthread.h
+[2.517s] -- Looking for pthread.h - found
+[2.518s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[2.748s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[2.755s] -- Found Threads: TRUE  
+[2.944s] -- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)
+[3.032s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.303s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.303s] -- Configured cppcheck include dirs: 
+[3.303s] -- Configured cppcheck exclude dirs and/or files: 
+[3.305s] -- Added test 'lint_cmake' to check CMake code style
+[3.308s] -- Added test 'uncrustify' to check C / C++ code style
+[3.308s] -- Configured uncrustify additional arguments: 
+[3.309s] -- Added test 'xmllint' to check XML markup files
+[3.312s] -- Configuring done
+[3.319s] -- Generating done
+[3.324s] -- Build files have been written to: /home/ana/robot_ws/build/firebot_cpp
+[3.352s] Invoked command in '/home/ana/robot_ws/build/firebot_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake /home/ana/robot_ws/src/firebot_cpp -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/firebot_cpp
+[3.357s] Invoking command in '/home/ana/robot_ws/build/firebot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --build /home/ana/robot_ws/build/firebot_cpp -- -j20 -l20
+[3.454s] Invoked command in '/home/ana/robot_ws/build/firebot_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --build /home/ana/robot_ws/build/firebot_cpp -- -j20 -l20
+[3.460s] Invoking command in '/home/ana/robot_ws/build/firebot_cpp': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --install /home/ana/robot_ws/build/firebot_cpp
+[3.475s] -- Install configuration: ""
+[3.476s] -- Execute custom install script
+[3.477s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/ament_index/resource_index/package_run_dependencies/firebot_cpp
+[3.498s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/ament_index/resource_index/parent_prefix_path/firebot_cpp
+[3.519s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/environment/ament_prefix_path.sh
+[3.539s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/environment/ament_prefix_path.dsv
+[3.561s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/environment/path.sh
+[3.595s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/environment/path.dsv
+[3.623s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/local_setup.bash
+[3.654s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/local_setup.sh
+[3.687s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/local_setup.zsh
+[3.714s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/local_setup.dsv
+[3.752s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.dsv
+[3.780s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/ament_index/resource_index/packages/firebot_cpp
+[3.811s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/cmake/firebot_cppConfig.cmake
+[3.834s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/cmake/firebot_cppConfig-version.cmake
+[3.860s] -- Symlinking: /home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.xml
+[3.914s] Invoked command in '/home/ana/robot_ws/build/firebot_cpp' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --install /home/ana/robot_ws/build/firebot_cpp

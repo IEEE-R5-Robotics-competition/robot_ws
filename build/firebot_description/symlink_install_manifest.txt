@@ -1,6 +1,7 @@
 /home/ana/robot_ws/install/firebot_description/share/firebot_description/launch/robot_state_publisher.launch.py
 /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/gazebo_control.xacro
 /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/inertial_macros.xacro
+/home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/lidar.xacro
 /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/robot.urdf.xacro
 /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/robot_core.xacro
 /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/ros2_control.xacro

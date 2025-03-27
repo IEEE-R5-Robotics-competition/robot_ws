@@ -1,0 +1,81 @@
+[0.994s] Invoking command in '/home/ana/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake /home/ana/robot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/serial
+[1.109s] -- The C compiler identification is GNU 11.4.0
+[1.272s] -- The CXX compiler identification is GNU 11.4.0
+[1.293s] -- Detecting C compiler ABI info
+[1.479s] -- Detecting C compiler ABI info - done
+[1.501s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.504s] -- Detecting C compile features
+[1.505s] -- Detecting C compile features - done
+[1.514s] -- Detecting CXX compiler ABI info
+[1.733s] -- Detecting CXX compiler ABI info - done
+[1.760s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.761s] -- Detecting CXX compile features
+[1.762s] -- Detecting CXX compile features - done
+[1.771s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.338s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.563s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.666s] -- Found ament_cmake_gtest: 1.3.11 (/opt/ros/humble/share/ament_cmake_gtest/cmake)
+[2.702s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0")  
+[2.712s] -- Found gtest sources under '/opt/ros/humble/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[2.721s] -- Looking for pthread.h
+[2.933s] -- Looking for pthread.h - found
+[2.933s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[3.144s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[3.147s] -- Found Threads: TRUE  
+[3.344s] -- Configuring done
+[3.367s] -- Generating done
+[3.375s] -- Build files have been written to: /home/ana/robot_ws/build/serial
+[3.385s] Invoked command in '/home/ana/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake /home/ana/robot_ws/src/serial -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/serial
+[3.389s] Invoking command in '/home/ana/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --build /home/ana/robot_ws/build/serial -- -j20 -l20
+[3.503s] [  7%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/unix.cc.o[0m
+[3.504s] [ 14%] [32mBuilding CXX object CMakeFiles/serial.dir/src/impl/list_ports/list_ports_linux.cc.o[0m
+[3.510s] [ 21%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[3.510s] [ 35%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[3.511s] [ 35%] [32mBuilding CXX object CMakeFiles/serial.dir/src/serial.cc.o[0m
+[5.384s] [ 42%] [32m[1mLinking CXX static library libserial.a[0m
+[5.655s] [ 42%] Built target serial
+[5.806s] [ 50%] [32mBuilding CXX object CMakeFiles/serial_example.dir/examples/serial_example.cc.o[0m
+[7.811s] [ 57%] [32m[1mLinking CXX executable serial_example[0m
+[8.463s] [ 57%] Built target serial_example
+[8.536s] [ 64%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[8.795s] [ 64%] Built target gtest_main
+[14.566s] [ 71%] [32m[1mLinking CXX static library libgtest.a[0m
+[14.694s] [ 71%] Built target gtest
+[14.746s] [ 78%] [32mBuilding CXX object tests/CMakeFiles/serial-test-timer.dir/unit/unix_timer_tests.cc.o[0m
+[14.748s] [ 85%] [32mBuilding CXX object tests/CMakeFiles/serial-test.dir/unix_serial_tests.cc.o[0m
+[16.898s] In file included from [01m[K/usr/include/boost/bind.hpp:30[m[K,
+[16.899s]                  from [01m[K/home/ana/robot_ws/src/serial/tests/unix_serial_tests.cc:23[m[K:
+[16.899s] [01m[K/usr/include/boost/bind.hpp:36:1:[m[K [01;36m[Knote: [m[K‘[01m[K#pragma message: The practice of declaring the Bind placeholders (_1, _2, ...) in the global namespace is deprecated. Please use <boost/bind/bind.hpp> + using namespace boost::placeholders, or define BOOST_BIND_GLOBAL_PLACEHOLDERS to retain the current behavior.[m[K’
+[16.899s]    36 | [01;36m[KBOOST_PRAGMA_MESSAGE[m[K(
+[16.899s]       | [01;36m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[17.029s] [ 92%] [32m[1mLinking CXX executable serial-test-timer[0m
+[17.369s] [ 92%] Built target serial-test-timer
+[17.385s] [100%] [32m[1mLinking CXX executable serial-test[0m
+[17.703s] [100%] Built target serial-test
+[17.729s] Invoked command in '/home/ana/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --build /home/ana/robot_ws/build/serial -- -j20 -l20
+[17.733s] Invoking command in '/home/ana/robot_ws/build/serial': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --install /home/ana/robot_ws/build/serial
+[17.750s] -- Install configuration: ""
+[17.751s] -- Execute custom install script
+[17.752s] -- Symlinking: /home/ana/robot_ws/install/serial/lib/libserial.a
+[17.774s] -- Symlinking: /home/ana/robot_ws/install/serial/include/serial/serial.h
+[17.793s] -- Symlinking: /home/ana/robot_ws/install/serial/include/serial/v8stdint.h
+[17.816s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/environment/library_path.sh
+[17.835s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/environment/library_path.dsv
+[17.858s] -- Symlinking: /home/ana/robot_ws/install/serial/share/ament_index/resource_index/package_run_dependencies/serial
+[17.881s] -- Symlinking: /home/ana/robot_ws/install/serial/share/ament_index/resource_index/parent_prefix_path/serial
+[17.902s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/environment/ament_prefix_path.sh
+[17.922s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/environment/ament_prefix_path.dsv
+[17.943s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/environment/path.sh
+[17.965s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/environment/path.dsv
+[17.983s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/local_setup.bash
+[18.002s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/local_setup.sh
+[18.025s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/local_setup.zsh
+[18.048s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/local_setup.dsv
+[18.072s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/package.dsv
+[18.095s] -- Symlinking: /home/ana/robot_ws/install/serial/share/ament_index/resource_index/packages/serial
+[18.114s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_include_directories-extras.cmake
+[18.135s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/cmake/ament_cmake_export_libraries-extras.cmake
+[18.158s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/cmake/serialConfig.cmake
+[18.181s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/cmake/serialConfig-version.cmake
+[18.203s] -- Symlinking: /home/ana/robot_ws/install/serial/share/serial/package.xml
+[18.230s] Invoked command in '/home/ana/robot_ws/build/serial' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --install /home/ana/robot_ws/build/serial

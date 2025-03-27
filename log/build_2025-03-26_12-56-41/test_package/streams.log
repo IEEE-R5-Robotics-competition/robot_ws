@@ -1,0 +1,23 @@
+[0.921s] Invoking command in '/home/ana/robot_ws/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --build /home/ana/robot_ws/build/test_package -- -j20 -l20
+[1.043s] [100%] Built target my_publisher
+[1.128s] Invoked command in '/home/ana/robot_ws/build/test_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --build /home/ana/robot_ws/build/test_package -- -j20 -l20
+[1.131s] Invoking command in '/home/ana/robot_ws/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --install /home/ana/robot_ws/build/test_package
+[1.155s] -- Install configuration: ""
+[1.156s] -- Execute custom install script
+[1.156s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/lib/test_package/my_publisher
+[1.157s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/ament_index/resource_index/package_run_dependencies/test_package
+[1.158s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/ament_index/resource_index/parent_prefix_path/test_package
+[1.158s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/environment/ament_prefix_path.sh
+[1.159s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/environment/ament_prefix_path.dsv
+[1.160s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/environment/path.sh
+[1.160s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/environment/path.dsv
+[1.160s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/local_setup.bash
+[1.160s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/local_setup.sh
+[1.162s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/local_setup.zsh
+[1.162s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/local_setup.dsv
+[1.162s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/package.dsv
+[1.189s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/ament_index/resource_index/packages/test_package
+[1.189s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/cmake/test_packageConfig.cmake
+[1.189s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/cmake/test_packageConfig-version.cmake
+[1.189s] -- Up-to-date symlink: /home/ana/robot_ws/install/test_package/share/test_package/package.xml
+[1.242s] Invoked command in '/home/ana/robot_ws/build/test_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --install /home/ana/robot_ws/build/test_package

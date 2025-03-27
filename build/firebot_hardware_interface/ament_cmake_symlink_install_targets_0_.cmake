@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/ana/robot_ws/build/firebot_hardware_interface/libfirebot_hardware_interface.so" "TARGETS" "firebot_hardware_interface" "LIBRARY_DESTINATION" "lib")

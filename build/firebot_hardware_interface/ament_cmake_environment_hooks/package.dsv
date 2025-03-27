@@ -1,4 +1,0 @@
-source;share/firebot_hardware_interface/local_setup.bash
-source;share/firebot_hardware_interface/local_setup.dsv
-source;share/firebot_hardware_interface/local_setup.sh
-source;share/firebot_hardware_interface/local_setup.zsh

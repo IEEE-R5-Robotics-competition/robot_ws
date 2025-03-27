@@ -1,7 +1,10 @@
 [console_scripts]
+cmd_vel_stamper = firebot_py.cmd_vel_stamper:main
 lidar_node = firebot_py.lidar_node:main
-lidar_processing = firebot_py.lidar_processing:main
 navigation_control = firebot_py.navigation_control:main
-serial_bridge = firebot_py.serial_bridge:main
+random_nav_node = firebot_py.random_nav_node:main
+slam_mapping = firebot_py.slam_mapping:main
+square_nav_node = firebot_py.square_nav_node:main
 thermal_camera = firebot_py.thermal_camera:main
+twist_stamper = firebot_py.twist_stamper:main
 

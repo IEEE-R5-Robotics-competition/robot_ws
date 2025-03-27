@@ -1,0 +1,61 @@
+[1.007s] Invoking command in '/home/ana/robot_ws/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake /home/ana/robot_ws/src/test_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/test_package
+[1.120s] -- The C compiler identification is GNU 11.4.0
+[1.266s] -- The CXX compiler identification is GNU 11.4.0
+[1.285s] -- Detecting C compiler ABI info
+[1.457s] -- Detecting C compiler ABI info - done
+[1.476s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.477s] -- Detecting C compile features
+[1.478s] -- Detecting C compile features - done
+[1.484s] -- Detecting CXX compiler ABI info
+[1.710s] -- Detecting CXX compiler ABI info - done
+[1.739s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.740s] -- Detecting CXX compile features
+[1.742s] -- Detecting CXX compile features - done
+[1.751s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.302s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.568s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.670s] -- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)
+[2.832s] -- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.852s] -- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.881s] -- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.924s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.977s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.105s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[3.112s] -- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[3.339s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[3.419s] -- Found FastRTPS: /opt/ros/humble/include  
+[3.584s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[3.644s] -- Looking for pthread.h
+[3.872s] -- Looking for pthread.h - found
+[3.873s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.102s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[4.108s] -- Found Threads: TRUE  
+[4.491s] -- Configuring done
+[4.522s] -- Generating done
+[4.535s] -- Build files have been written to: /home/ana/robot_ws/build/test_package
+[4.580s] Invoked command in '/home/ana/robot_ws/build/test_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake /home/ana/robot_ws/src/test_package -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ana/robot_ws/install/test_package
+[4.586s] Invoking command in '/home/ana/robot_ws/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --build /home/ana/robot_ws/build/test_package -- -j20 -l20
+[4.732s] [ 50%] [32mBuilding CXX object CMakeFiles/my_publisher.dir/src/my_ros2_package.cpp.o[0m
+[19.009s] [100%] [32m[1mLinking CXX executable my_publisher[0m
+[19.409s] [100%] Built target my_publisher
+[19.432s] Invoked command in '/home/ana/robot_ws/build/test_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --build /home/ana/robot_ws/build/test_package -- -j20 -l20
+[19.435s] Invoking command in '/home/ana/robot_ws/build/test_package': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --install /home/ana/robot_ws/build/test_package
+[19.455s] -- Install configuration: ""
+[19.456s] -- Execute custom install script
+[19.456s] -- Symlinking: /home/ana/robot_ws/install/test_package/lib/test_package/my_publisher
+[19.481s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/ament_index/resource_index/package_run_dependencies/test_package
+[19.498s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/ament_index/resource_index/parent_prefix_path/test_package
+[19.520s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/environment/ament_prefix_path.sh
+[19.537s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/environment/ament_prefix_path.dsv
+[19.554s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/environment/path.sh
+[19.570s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/environment/path.dsv
+[19.588s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/local_setup.bash
+[19.602s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/local_setup.sh
+[19.619s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/local_setup.zsh
+[19.639s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/local_setup.dsv
+[19.654s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/package.dsv
+[19.670s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/ament_index/resource_index/packages/test_package
+[19.690s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/cmake/test_packageConfig.cmake
+[19.704s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/cmake/test_packageConfig-version.cmake
+[19.722s] -- Symlinking: /home/ana/robot_ws/install/test_package/share/test_package/package.xml
+[19.741s] Invoked command in '/home/ana/robot_ws/build/test_package' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble:/home/ana/robot_ws/install/py_pubsub:/home/ana/robot_ws/install/firebot_py /usr/bin/cmake --install /home/ana/robot_ws/build/test_package
