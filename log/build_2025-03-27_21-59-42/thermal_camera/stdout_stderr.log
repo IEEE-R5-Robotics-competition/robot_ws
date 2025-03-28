@@ -1,0 +1,26 @@
+running develop
+/usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+/usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+  warnings.warn(
+running egg_info
+creating thermal_camera.egg-info
+writing thermal_camera.egg-info/PKG-INFO
+writing dependency_links to thermal_camera.egg-info/dependency_links.txt
+writing entry points to thermal_camera.egg-info/entry_points.txt
+writing requirements to thermal_camera.egg-info/requires.txt
+writing top-level names to thermal_camera.egg-info/top_level.txt
+writing manifest file 'thermal_camera.egg-info/SOURCES.txt'
+reading manifest file 'thermal_camera.egg-info/SOURCES.txt'
+writing manifest file 'thermal_camera.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/utdr5/robot_ws/install/thermal_camera/lib/python3.11/site-packages/thermal-camera.egg-link (link to .)
+Installing thermal_node script to /home/utdr5/robot_ws/install/thermal_camera/lib/thermal_camera
+
+Installed /home/utdr5/robot_ws/build/thermal_camera
+running install_data
+creating /home/utdr5/robot_ws/install/thermal_camera/share/ament_index
+creating /home/utdr5/robot_ws/install/thermal_camera/share/ament_index/resource_index
+creating /home/utdr5/robot_ws/install/thermal_camera/share/ament_index/resource_index/packages
+copying resource/thermal_camera -> /home/utdr5/robot_ws/install/thermal_camera/share/ament_index/resource_index/packages
+copying package.xml -> /home/utdr5/robot_ws/install/thermal_camera/share/thermal_camera

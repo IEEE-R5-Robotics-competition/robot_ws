@@ -1,4 +1,3 @@
 import sys
-if sys.prefix == '/usr':
-    sys.real_prefix = sys.prefix
-    sys.prefix = sys.exec_prefix = '/home/ana/robot_ws/install/firebot_py'
+sys.real_prefix = sys.prefix
+sys.prefix = sys.exec_prefix = '/home/utdr5/robot_ws/install/firebot_py'

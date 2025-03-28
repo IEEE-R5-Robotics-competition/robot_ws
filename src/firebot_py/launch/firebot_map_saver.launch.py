@@ -18,7 +18,7 @@ def generate_launch_description():
         )
     )
     
-    # Include the Nav2 bringup launch file we just created
+    # Include the Nav2 bringup launch file
     nav2_launch = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
             os.path.join(firebot_py_dir, 'firebot_nav2.launch.py')
@@ -32,14 +32,13 @@ def generate_launch_description():
     )
 
     square_nav = Node(
-        package= package_name,
+        package=package_name,
         executable='square_nav_node',
         name='square_nav_node',
         output='screen'
     )
     
-    # After 5 minutes (300 seconds), automatically save the map.
-    # This uses nav2_map_server's map_saver_cli to save the current occupancy grid.
+    # Save the map after 2 minutes
     map_saver = TimerAction(
         period=120.0,
         actions=[
@@ -49,11 +48,19 @@ def generate_launch_description():
             )
         ]
     )
-    
+
+    # Add a 30-second delay before starting everything
+    delayed_start = TimerAction(
+        period=10.0,
+        actions=[
+            firebot_launch,
+            nav2_launch,
+            square_nav,
+            # random_nav,  # Uncomment if needed
+            map_saver
+        ]
+    )
+
     return LaunchDescription([
-        firebot_launch,
-        nav2_launch,
-        square_nav,
-        #random_nav,
-        map_saver
+        delayed_start
     ])

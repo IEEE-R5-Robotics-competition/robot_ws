@@ -1,0 +1,28 @@
+[2.636s] Invoking command in '/home/utdr5/robot_ws/build/thermal_camera': PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] PYTHONPATH=/home/utdr5/robot_ws/build/thermal_camera/prefix_override:/home/utdr5/robot_ws/install/thermal_camera/lib/python3.11/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/python3 setup.py develop --editable --build-directory /home/utdr5/robot_ws/build/thermal_camera/build --no-deps install_data
+[3.533s] running develop
+[3.542s] /usr/lib/python3/dist-packages/setuptools/command/easy_install.py:146: EasyInstallDeprecationWarning: easy_install command is deprecated. Use build and pip and other standards-based tools.
+[3.542s]   warnings.warn(
+[3.609s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[3.609s]   warnings.warn(
+[4.016s] running egg_info
+[4.016s] creating thermal_camera.egg-info
+[4.054s] writing thermal_camera.egg-info/PKG-INFO
+[4.054s] writing dependency_links to thermal_camera.egg-info/dependency_links.txt
+[4.054s] writing entry points to thermal_camera.egg-info/entry_points.txt
+[4.054s] writing requirements to thermal_camera.egg-info/requires.txt
+[4.054s] writing top-level names to thermal_camera.egg-info/top_level.txt
+[4.055s] writing manifest file 'thermal_camera.egg-info/SOURCES.txt'
+[4.124s] reading manifest file 'thermal_camera.egg-info/SOURCES.txt'
+[4.125s] writing manifest file 'thermal_camera.egg-info/SOURCES.txt'
+[4.171s] running build_ext
+[4.171s] Creating /home/utdr5/robot_ws/install/thermal_camera/lib/python3.11/site-packages/thermal-camera.egg-link (link to .)
+[4.172s] Installing thermal_node script to /home/utdr5/robot_ws/install/thermal_camera/lib/thermal_camera
+[4.172s] 
+[4.172s] Installed /home/utdr5/robot_ws/build/thermal_camera
+[4.173s] running install_data
+[4.173s] creating /home/utdr5/robot_ws/install/thermal_camera/share/ament_index
+[4.173s] creating /home/utdr5/robot_ws/install/thermal_camera/share/ament_index/resource_index
+[4.173s] creating /home/utdr5/robot_ws/install/thermal_camera/share/ament_index/resource_index/packages
+[4.173s] copying resource/thermal_camera -> /home/utdr5/robot_ws/install/thermal_camera/share/ament_index/resource_index/packages
+[4.173s] copying package.xml -> /home/utdr5/robot_ws/install/thermal_camera/share/thermal_camera
+[4.324s] Invoked command in '/home/utdr5/robot_ws/build/thermal_camera' returned '0': PS1=(myenv) \[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w \$\[\033[00m\] PYTHONPATH=/home/utdr5/robot_ws/build/thermal_camera/prefix_override:/home/utdr5/robot_ws/install/thermal_camera/lib/python3.11/site-packages:${PYTHONPATH} VIRTUAL_ENV_PROMPT=(myenv) /usr/bin/python3 setup.py develop --editable --build-directory /home/utdr5/robot_ws/build/thermal_camera/build --no-deps install_data
