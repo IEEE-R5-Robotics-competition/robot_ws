@@ -2,6 +2,7 @@
 import rclpy
 from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
+from std_msgs.msg import Bool
 import math
 
 class SquareNavNode(Node):
@@ -19,10 +20,31 @@ class SquareNavNode(Node):
             (0.5, 2.0, -math.pi/2)     # Top-left
         ]
         self.current_index = 0
+        self.ishot = False
+
+        # Subscribe to /ishot to monitor whether the robot should stop
+        self.ishot_sub = self.create_subscription(Bool, '/ishot', self.ishot_callback, 10)
 
         self.get_logger().info("Square Navigation node started, publishing a goal every {:.1f} seconds".format(self.timer_period))
 
+    def ishot_callback(self, msg):
+        if msg.data:
+            self.get_logger().info("🔥 Fire detected! Stopping navigation.")
+            self.ishot = True
+            self.stop_navigation()
+
+    def stop_navigation(self):
+        # Stop sending goals and optionally shut down
+        self.get_logger().info("Stopping the navigation loop.")
+        self.timer.cancel()  # Cancel the timer to stop publishing goals
+        # If you want to shut down ROS gracefully:
+        rclpy.shutdown()
+
     def timer_callback(self):
+        if self.ishot:
+            self.get_logger().info("Navigation stopped due to fire alert.")
+            return  # If fire detected, stop the navigation
+
         x, y, yaw = self.waypoints[self.current_index]
 
         goal = PoseStamped()

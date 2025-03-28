@@ -17,6 +17,7 @@ def generate_launch_description(): # Get package directories
     firebot_hardware_interface_dir = get_package_share_directory('ros2_control_demo_example_2')
     firebot_py_dir = get_package_share_directory(package_name)
     rplidar_ros_dir = get_package_share_directory('rplidar_ros')
+    thermal_camera_dir = get_package_share_directory('thermal_camera')
     
     # Include the robot_state_publisher launch (which processes your URDF including the lidar)
     rsp_launch = IncludeLaunchDescription(
@@ -79,6 +80,13 @@ def generate_launch_description(): # Get package directories
                 {'output_topic': '/diffbot_base_controller/cmd_vel_stamped'}
             ]
         )
+    
+    thermal_node = Node(
+        package='thermal_camera',
+        executable='thermal_node',
+        name='thermal_node',
+        output='screen'
+    )
 
     # Optionally launch RViz for visualization
     # rviz_config = os.path.join(firebot_py_dir, 'config', 'display.rviz')
@@ -97,6 +105,7 @@ def generate_launch_description(): # Get package directories
         lidar_launch,
         slam_node,
         stamp_converter,
+        thermal_node,
         # twist_stamper,
         # twist_mux
         # rviz_node

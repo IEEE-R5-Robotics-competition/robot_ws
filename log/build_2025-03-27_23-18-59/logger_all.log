@@ -1,0 +1,602 @@
+[0.113s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--symlink-install']
+[0.113s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=True, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=20, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x723d61666320>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x723d61665e70>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x723d61665e70>>, mixin_verb=('build',))
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.277s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.277s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ana/robot_ws'
+[0.277s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.278s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.291s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extensions ['ignore', 'ignore_ament_install']
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extension 'ignore'
+[0.292s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extension 'ros'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extensions ['cmake', 'python']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extension 'cmake'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extension 'python'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extensions ['python_setup_py']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/ROSArduinoBridge) by extension 'python_setup_py'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ignore', 'ignore_ament_install']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ignore_ament_install'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_pkg']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_pkg'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['colcon_meta']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'colcon_meta'
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extensions ['ros']
+[0.293s] Level 1:colcon.colcon_core.package_identification:_identify(src/articubot_one) by extension 'ros'
+[0.296s] DEBUG:colcon.colcon_core.package_identification:Package 'src/articubot_one' with type 'ros.ament_cmake' and name 'articubot_one'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_2) by extensions ['ignore', 'ignore_ament_install']
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_2) by extension 'ignore'
+[0.296s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_2) by extension 'ignore_ament_install'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_2) by extensions ['colcon_pkg']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_2) by extension 'colcon_pkg'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_2) by extensions ['colcon_meta']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_2) by extension 'colcon_meta'
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_2) by extensions ['ros']
+[0.297s] Level 1:colcon.colcon_core.package_identification:_identify(src/example_2) by extension 'ros'
+[0.298s] DEBUG:colcon.colcon_core.package_identification:Package 'src/example_2' with type 'ros.ament_cmake' and name 'ros2_control_demo_example_2'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_cpp) by extensions ['ignore', 'ignore_ament_install']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_cpp) by extension 'ignore'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_cpp) by extension 'ignore_ament_install'
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_cpp) by extensions ['colcon_pkg']
+[0.298s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_cpp) by extension 'colcon_pkg'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_cpp) by extensions ['colcon_meta']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_cpp) by extension 'colcon_meta'
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_cpp) by extensions ['ros']
+[0.299s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_cpp) by extension 'ros'
+[0.299s] DEBUG:colcon.colcon_core.package_identification:Package 'src/firebot_cpp' with type 'ros.ament_cmake' and name 'firebot_cpp'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_description) by extensions ['ignore', 'ignore_ament_install']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_description) by extension 'ignore'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_description) by extension 'ignore_ament_install'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_description) by extensions ['colcon_pkg']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_description) by extension 'colcon_pkg'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_description) by extensions ['colcon_meta']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_description) by extension 'colcon_meta'
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_description) by extensions ['ros']
+[0.300s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_description) by extension 'ros'
+[0.301s] DEBUG:colcon.colcon_core.package_identification:Package 'src/firebot_description' with type 'ros.ament_cmake' and name 'firebot_description'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_py) by extensions ['ignore', 'ignore_ament_install']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_py) by extension 'ignore'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_py) by extension 'ignore_ament_install'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_py) by extensions ['colcon_pkg']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_py) by extension 'colcon_pkg'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_py) by extensions ['colcon_meta']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_py) by extension 'colcon_meta'
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_py) by extensions ['ros']
+[0.301s] Level 1:colcon.colcon_core.package_identification:_identify(src/firebot_py) by extension 'ros'
+[0.304s] DEBUG:colcon.colcon_core.package_identification:Package 'src/firebot_py' with type 'ros.ament_python' and name 'firebot_py'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/py_pubsub) by extension 'ros'
+[0.305s] DEBUG:colcon.colcon_core.package_identification:Package 'src/py_pubsub' with type 'ros.ament_python' and name 'py_pubsub'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'ros'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['cmake', 'python']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'cmake'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'python'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extensions ['python_setup_py']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/rplidar_ros) by extension 'python_setup_py'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['colcon_meta']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'colcon_meta'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['ros']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'ros'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['cmake', 'python']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'cmake'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'python'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extensions ['python_setup_py']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/serial) by extension 'python_setup_py'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['ignore', 'ignore_ament_install']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'ignore'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'ignore_ament_install'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['colcon_pkg']
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'colcon_pkg'
+[0.306s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['colcon_meta']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'colcon_meta'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extensions ['ros']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_package) by extension 'ros'
+[0.307s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_package' with type 'ros.ament_cmake' and name 'test_package'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/thermal_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/thermal_camera) by extension 'ignore'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/thermal_camera) by extension 'ignore_ament_install'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/thermal_camera) by extensions ['colcon_pkg']
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/thermal_camera) by extension 'colcon_pkg'
+[0.307s] Level 1:colcon.colcon_core.package_identification:_identify(src/thermal_camera) by extensions ['colcon_meta']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/thermal_camera) by extension 'colcon_meta'
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/thermal_camera) by extensions ['ros']
+[0.308s] Level 1:colcon.colcon_core.package_identification:_identify(src/thermal_camera) by extension 'ros'
+[0.308s] DEBUG:colcon.colcon_core.package_identification:Package 'src/thermal_camera' with type 'ros.ament_python' and name 'thermal_camera'
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.308s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.341s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.343s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 422 installed packages in /opt/ros/humble
+[0.346s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_args' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target' from command line to 'None'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_cache' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_clean_first' from command line to 'False'
+[0.392s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'cmake_force_configure' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'ament_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'articubot_one' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.393s] DEBUG:colcon.colcon_core.verb:Building package 'articubot_one' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ana/robot_ws/build/articubot_one', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ana/robot_ws/install/articubot_one', 'merge_install': False, 'path': '/home/ana/robot_ws/src/articubot_one', 'symlink_install': True, 'test_result_base': None}
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'firebot_cpp' build argument 'cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'firebot_cpp' build argument 'cmake_target' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'firebot_cpp' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'firebot_cpp' build argument 'cmake_clean_cache' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'firebot_cpp' build argument 'cmake_clean_first' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'firebot_cpp' build argument 'cmake_force_configure' from command line to 'False'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'firebot_cpp' build argument 'ament_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'firebot_cpp' build argument 'catkin_cmake_args' from command line to 'None'
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'firebot_cpp' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.393s] DEBUG:colcon.colcon_core.verb:Building package 'firebot_cpp' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ana/robot_ws/build/firebot_cpp', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ana/robot_ws/install/firebot_cpp', 'merge_install': False, 'path': '/home/ana/robot_ws/src/firebot_cpp', 'symlink_install': True, 'test_result_base': None}
+[0.393s] Level 5:colcon.colcon_core.verb:set package 'firebot_description' build argument 'cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_description' build argument 'cmake_target' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.394s] DEBUG:colcon.colcon_core.verb:Building package 'firebot_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ana/robot_ws/build/firebot_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ana/robot_ws/install/firebot_description', 'merge_install': False, 'path': '/home/ana/robot_ws/src/firebot_description', 'symlink_install': True, 'test_result_base': None}
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_py' build argument 'cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_py' build argument 'cmake_target' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_py' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_py' build argument 'cmake_clean_cache' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_py' build argument 'cmake_clean_first' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_py' build argument 'cmake_force_configure' from command line to 'False'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_py' build argument 'ament_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_py' build argument 'catkin_cmake_args' from command line to 'None'
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'firebot_py' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.394s] DEBUG:colcon.colcon_core.verb:Building package 'firebot_py' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ana/robot_ws/build/firebot_py', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ana/robot_ws/install/firebot_py', 'merge_install': False, 'path': '/home/ana/robot_ws/src/firebot_py', 'symlink_install': True, 'test_result_base': None}
+[0.394s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_target' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_clean_cache' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_clean_first' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'cmake_force_configure' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'ament_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'catkin_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'py_pubsub' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.395s] DEBUG:colcon.colcon_core.verb:Building package 'py_pubsub' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ana/robot_ws/build/py_pubsub', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ana/robot_ws/install/py_pubsub', 'merge_install': False, 'path': '/home/ana/robot_ws/src/py_pubsub', 'symlink_install': True, 'test_result_base': None}
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_example_2' build argument 'cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_example_2' build argument 'cmake_target' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_example_2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_example_2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_example_2' build argument 'cmake_clean_first' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_example_2' build argument 'cmake_force_configure' from command line to 'False'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_example_2' build argument 'ament_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_example_2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.395s] Level 5:colcon.colcon_core.verb:set package 'ros2_control_demo_example_2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.395s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_control_demo_example_2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ana/robot_ws/build/ros2_control_demo_example_2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ana/robot_ws/install/ros2_control_demo_example_2', 'merge_install': False, 'path': '/home/ana/robot_ws/src/example_2', 'symlink_install': True, 'test_result_base': None}
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_target' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_clean_cache' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_clean_first' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'cmake_force_configure' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'ament_cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'catkin_cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'test_package' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.396s] DEBUG:colcon.colcon_core.verb:Building package 'test_package' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ana/robot_ws/build/test_package', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ana/robot_ws/install/test_package', 'merge_install': False, 'path': '/home/ana/robot_ws/src/test_package', 'symlink_install': True, 'test_result_base': None}
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'thermal_camera' build argument 'cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'thermal_camera' build argument 'cmake_target' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'thermal_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'thermal_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'thermal_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'thermal_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'thermal_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'thermal_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.396s] Level 5:colcon.colcon_core.verb:set package 'thermal_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.396s] DEBUG:colcon.colcon_core.verb:Building package 'thermal_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/ana/robot_ws/build/thermal_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/ana/robot_ws/install/thermal_camera', 'merge_install': False, 'path': '/home/ana/robot_ws/src/thermal_camera', 'symlink_install': True, 'test_result_base': None}
+[0.396s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.397s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.398s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ana/robot_ws/src/articubot_one' with build type 'ament_cmake'
+[0.398s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ana/robot_ws/src/articubot_one'
+[0.400s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.400s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.400s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.404s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ana/robot_ws/src/firebot_cpp' with build type 'ament_cmake'
+[0.404s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ana/robot_ws/src/firebot_cpp'
+[0.404s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.404s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.407s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ana/robot_ws/src/firebot_description' with build type 'ament_cmake'
+[0.408s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ana/robot_ws/src/firebot_description'
+[0.408s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.408s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.412s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ana/robot_ws/src/firebot_py' with build type 'ament_python'
+[0.412s] Level 1:colcon.colcon_core.shell:create_environment_hook('firebot_py', 'ament_prefix_path')
+[0.412s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_py/share/firebot_py/hook/ament_prefix_path.ps1'
+[0.413s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/firebot_py/share/firebot_py/hook/ament_prefix_path.dsv'
+[0.414s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_py/share/firebot_py/hook/ament_prefix_path.sh'
+[0.415s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.415s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.420s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ana/robot_ws/src/py_pubsub' with build type 'ament_python'
+[0.420s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'ament_prefix_path')
+[0.420s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.ps1'
+[0.421s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.dsv'
+[0.422s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/hook/ament_prefix_path.sh'
+[0.423s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.423s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.426s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ana/robot_ws/src/example_2' with build type 'ament_cmake'
+[0.427s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ana/robot_ws/src/example_2'
+[0.427s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.427s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.431s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/ana/robot_ws/src/test_package' with build type 'ament_cmake'
+[0.431s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/ana/robot_ws/src/test_package'
+[0.431s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.431s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.435s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/ana/robot_ws/src/thermal_camera' with build type 'ament_python'
+[0.435s] Level 1:colcon.colcon_core.shell:create_environment_hook('thermal_camera', 'ament_prefix_path')
+[0.436s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/hook/ament_prefix_path.ps1'
+[0.436s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/hook/ament_prefix_path.dsv'
+[0.437s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/hook/ament_prefix_path.sh'
+[0.438s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.438s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.449s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/articubot_one -- -j20 -l20
+[0.453s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/firebot_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot_cpp -- -j20 -l20
+[0.456s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/firebot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot_description -- -j20 -l20
+[0.800s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ana/robot_ws/src/firebot_py'
+[0.800s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.800s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.121s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ana/robot_ws/src/py_pubsub'
+[1.122s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.122s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.129s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/ros2_control_demo_example_2 -- -j20 -l20
+[1.136s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/test_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/test_package -- -j20 -l20
+[1.489s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/ana/robot_ws/src/thermal_camera'
+[1.489s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.489s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.498s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/articubot_one -- -j20 -l20
+[1.512s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/articubot_one': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/articubot_one
+[1.513s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/firebot_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot_cpp -- -j20 -l20
+[1.515s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/firebot_cpp': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/firebot_cpp
+[1.515s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/firebot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot_description -- -j20 -l20
+[1.518s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/firebot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/firebot_description
+[1.520s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/test_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/test_package -- -j20 -l20
+[1.522s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/test_package': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/test_package
+[1.525s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/ros2_control_demo_example_2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/ros2_control_demo_example_2 -- -j20 -l20
+[1.526s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/ros2_control_demo_example_2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/ros2_control_demo_example_2
+[1.558s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[1.569s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one' for CMake module files
+[1.571s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/articubot_one' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/articubot_one
+[1.572s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one' for CMake config files
+[1.574s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[1.574s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[1.575s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[1.575s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[1.576s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one/bin'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one/lib/python3.10/site-packages'
+[1.577s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one/bin'
+[1.578s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/articubot_one/share/articubot_one/package.ps1'
+[1.579s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/articubot_one/share/articubot_one/package.dsv'
+[1.580s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/articubot_one/share/articubot_one/package.sh'
+[1.581s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/articubot_one/share/articubot_one/package.bash'
+[1.582s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/articubot_one/share/articubot_one/package.zsh'
+[1.583s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/articubot_one/share/colcon-core/packages/articubot_one)
+[1.584s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(articubot_one)
+[1.584s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one' for CMake module files
+[1.585s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one' for CMake config files
+[1.585s] Level 1:colcon.colcon_core.shell:create_environment_hook('articubot_one', 'cmake_prefix_path')
+[1.585s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.ps1'
+[1.586s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.dsv'
+[1.586s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/articubot_one/share/articubot_one/hook/cmake_prefix_path.sh'
+[1.587s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one/bin'
+[1.587s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one/lib/pkgconfig/articubot_one.pc'
+[1.588s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one/lib/python3.10/site-packages'
+[1.588s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/articubot_one/bin'
+[1.589s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/articubot_one/share/articubot_one/package.ps1'
+[1.589s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/articubot_one/share/articubot_one/package.dsv'
+[1.590s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/articubot_one/share/articubot_one/package.sh'
+[1.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/articubot_one/share/articubot_one/package.bash'
+[1.591s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/articubot_one/share/articubot_one/package.zsh'
+[1.592s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/articubot_one/share/colcon-core/packages/articubot_one)
+[1.592s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(firebot_cpp)
+[1.592s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp' for CMake module files
+[1.594s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp' for CMake config files
+[1.594s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/firebot_cpp' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/firebot_cpp
+[1.595s] Level 1:colcon.colcon_core.shell:create_environment_hook('firebot_cpp', 'cmake_prefix_path')
+[1.595s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/hook/cmake_prefix_path.ps1'
+[1.596s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/hook/cmake_prefix_path.dsv'
+[1.596s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/hook/cmake_prefix_path.sh'
+[1.597s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp/bin'
+[1.597s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp/lib/pkgconfig/firebot_cpp.pc'
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp/lib/python3.10/site-packages'
+[1.598s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp/bin'
+[1.598s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.ps1'
+[1.599s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.dsv'
+[1.600s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.sh'
+[1.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.bash'
+[1.601s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.zsh'
+[1.602s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/firebot_cpp/share/colcon-core/packages/firebot_cpp)
+[1.602s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(firebot_cpp)
+[1.603s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp' for CMake module files
+[1.603s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp' for CMake config files
+[1.603s] Level 1:colcon.colcon_core.shell:create_environment_hook('firebot_cpp', 'cmake_prefix_path')
+[1.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/hook/cmake_prefix_path.ps1'
+[1.605s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/hook/cmake_prefix_path.dsv'
+[1.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/hook/cmake_prefix_path.sh'
+[1.607s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp/bin'
+[1.607s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp/lib/pkgconfig/firebot_cpp.pc'
+[1.608s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp/lib/python3.10/site-packages'
+[1.608s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_cpp/bin'
+[1.609s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.ps1'
+[1.610s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.dsv'
+[1.611s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.sh'
+[1.612s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.bash'
+[1.613s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_cpp/share/firebot_cpp/package.zsh'
+[1.614s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/firebot_cpp/share/colcon-core/packages/firebot_cpp)
+[1.615s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(firebot_description)
+[1.616s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description' for CMake module files
+[1.617s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/firebot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/firebot_description
+[1.618s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description' for CMake config files
+[1.618s] Level 1:colcon.colcon_core.shell:create_environment_hook('firebot_description', 'cmake_prefix_path')
+[1.619s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_description/share/firebot_description/hook/cmake_prefix_path.ps1'
+[1.619s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/firebot_description/share/firebot_description/hook/cmake_prefix_path.dsv'
+[1.620s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_description/share/firebot_description/hook/cmake_prefix_path.sh'
+[1.622s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description/bin'
+[1.622s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description/lib/pkgconfig/firebot_description.pc'
+[1.622s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description/lib/python3.10/site-packages'
+[1.622s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description/bin'
+[1.623s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_description/share/firebot_description/package.ps1'
+[1.624s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/firebot_description/share/firebot_description/package.dsv'
+[1.624s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_description/share/firebot_description/package.sh'
+[1.625s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_description/share/firebot_description/package.bash'
+[1.626s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_description/share/firebot_description/package.zsh'
+[1.626s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/firebot_description/share/colcon-core/packages/firebot_description)
+[1.627s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(firebot_description)
+[1.627s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description' for CMake module files
+[1.628s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description' for CMake config files
+[1.628s] Level 1:colcon.colcon_core.shell:create_environment_hook('firebot_description', 'cmake_prefix_path')
+[1.628s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_description/share/firebot_description/hook/cmake_prefix_path.ps1'
+[1.629s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/firebot_description/share/firebot_description/hook/cmake_prefix_path.dsv'
+[1.630s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_description/share/firebot_description/hook/cmake_prefix_path.sh'
+[1.631s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description/bin'
+[1.631s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description/lib/pkgconfig/firebot_description.pc'
+[1.631s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description/lib/python3.10/site-packages'
+[1.632s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_description/bin'
+[1.632s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_description/share/firebot_description/package.ps1'
+[1.633s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/firebot_description/share/firebot_description/package.dsv'
+[1.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_description/share/firebot_description/package.sh'
+[1.634s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_description/share/firebot_description/package.bash'
+[1.635s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_description/share/firebot_description/package.zsh'
+[1.635s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/firebot_description/share/colcon-core/packages/firebot_description)
+[1.636s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_package)
+[1.636s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package' for CMake module files
+[1.638s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/test_package' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/test_package
+[1.638s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package' for CMake config files
+[1.638s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_package', 'cmake_prefix_path')
+[1.639s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/test_package/share/test_package/hook/cmake_prefix_path.ps1'
+[1.639s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/test_package/share/test_package/hook/cmake_prefix_path.dsv'
+[1.640s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/test_package/share/test_package/hook/cmake_prefix_path.sh'
+[1.641s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package/lib'
+[1.641s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package/bin'
+[1.641s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package/lib/pkgconfig/test_package.pc'
+[1.642s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package/lib/python3.10/site-packages'
+[1.642s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package/bin'
+[1.642s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/test_package/share/test_package/package.ps1'
+[1.643s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/test_package/share/test_package/package.dsv'
+[1.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/test_package/share/test_package/package.sh'
+[1.644s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/test_package/share/test_package/package.bash'
+[1.645s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/test_package/share/test_package/package.zsh'
+[1.645s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/test_package/share/colcon-core/packages/test_package)
+[1.646s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(test_package)
+[1.647s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package' for CMake module files
+[1.647s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package' for CMake config files
+[1.647s] Level 1:colcon.colcon_core.shell:create_environment_hook('test_package', 'cmake_prefix_path')
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/test_package/share/test_package/hook/cmake_prefix_path.ps1'
+[1.648s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/test_package/share/test_package/hook/cmake_prefix_path.dsv'
+[1.649s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/test_package/share/test_package/hook/cmake_prefix_path.sh'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package/lib'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package/bin'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package/lib/pkgconfig/test_package.pc'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package/lib/python3.10/site-packages'
+[1.650s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/test_package/bin'
+[1.651s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/test_package/share/test_package/package.ps1'
+[1.652s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/test_package/share/test_package/package.dsv'
+[1.652s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/test_package/share/test_package/package.sh'
+[1.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/test_package/share/test_package/package.bash'
+[1.653s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/test_package/share/test_package/package.zsh'
+[1.654s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/test_package/share/colcon-core/packages/test_package)
+[1.656s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_demo_example_2)
+[1.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/ros2_control_demo_example_2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/ros2_control_demo_example_2
+[1.657s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2' for CMake module files
+[1.658s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2' for CMake config files
+[1.659s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_example_2', 'cmake_prefix_path')
+[1.659s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/cmake_prefix_path.ps1'
+[1.660s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/cmake_prefix_path.dsv'
+[1.661s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/cmake_prefix_path.sh'
+[1.662s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2/lib'
+[1.662s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_example_2', 'ld_library_path_lib')
+[1.663s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/ld_library_path_lib.ps1'
+[1.664s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/ld_library_path_lib.dsv'
+[1.664s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/ld_library_path_lib.sh'
+[1.665s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2/bin'
+[1.665s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2/lib/pkgconfig/ros2_control_demo_example_2.pc'
+[1.666s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2/lib/python3.10/site-packages'
+[1.666s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2/bin'
+[1.667s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.ps1'
+[1.668s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.dsv'
+[1.669s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.sh'
+[1.670s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.bash'
+[1.671s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.zsh'
+[1.671s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/ros2_control_demo_example_2/share/colcon-core/packages/ros2_control_demo_example_2)
+[1.673s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_control_demo_example_2)
+[1.673s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2' for CMake module files
+[1.674s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2' for CMake config files
+[1.675s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_example_2', 'cmake_prefix_path')
+[1.675s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/cmake_prefix_path.ps1'
+[1.676s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/cmake_prefix_path.dsv'
+[1.677s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/cmake_prefix_path.sh'
+[1.678s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2/lib'
+[1.678s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_control_demo_example_2', 'ld_library_path_lib')
+[1.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/ld_library_path_lib.ps1'
+[1.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/ld_library_path_lib.dsv'
+[1.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/hook/ld_library_path_lib.sh'
+[1.681s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2/bin'
+[1.681s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2/lib/pkgconfig/ros2_control_demo_example_2.pc'
+[1.682s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2/lib/python3.10/site-packages'
+[1.682s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/ros2_control_demo_example_2/bin'
+[1.683s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.ps1'
+[1.684s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.dsv'
+[1.684s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.sh'
+[1.685s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.bash'
+[1.686s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/ros2_control_demo_example_2/share/ros2_control_demo_example_2/package.zsh'
+[1.687s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/ros2_control_demo_example_2/share/colcon-core/packages/ros2_control_demo_example_2)
+[2.068s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/firebot_py': PYTHONPATH=/home/ana/robot_ws/build/firebot_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ana/robot_ws/build/firebot_py/build --no-deps symlink_data
+[2.078s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/py_pubsub': PYTHONPATH=/home/ana/robot_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ana/robot_ws/build/py_pubsub/build --no-deps symlink_data
+[2.081s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/ana/robot_ws/build/thermal_camera': PYTHONPATH=/home/ana/robot_ws/build/thermal_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/thermal_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ana/robot_ws/build/thermal_camera/build --no-deps symlink_data
+[2.702s] Level 1:colcon.colcon_core.shell:create_environment_hook('firebot_py', 'pythonpath_develop')
+[2.703s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/build/firebot_py/share/firebot_py/hook/pythonpath_develop.ps1'
+[2.705s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/firebot_py' returned '0': PYTHONPATH=/home/ana/robot_ws/build/firebot_py/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ana/robot_ws/build/firebot_py/build --no-deps symlink_data
+[2.705s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/build/firebot_py/share/firebot_py/hook/pythonpath_develop.dsv'
+[2.706s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/build/firebot_py/share/firebot_py/hook/pythonpath_develop.sh'
+[2.707s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_py' for CMake module files
+[2.708s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_py' for CMake config files
+[2.708s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_py/lib'
+[2.709s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_py/bin'
+[2.709s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_py/lib/pkgconfig/firebot_py.pc'
+[2.709s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_py/lib/python3.10/site-packages'
+[2.709s] Level 1:colcon.colcon_core.shell:create_environment_hook('firebot_py', 'pythonpath')
+[2.710s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_py/share/firebot_py/hook/pythonpath.ps1'
+[2.710s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/firebot_py/share/firebot_py/hook/pythonpath.dsv'
+[2.711s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/firebot_py/share/firebot_py/hook/pythonpath.sh'
+[2.712s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/firebot_py/bin'
+[2.712s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(firebot_py)
+[2.712s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_py/share/firebot_py/package.ps1'
+[2.713s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/firebot_py/share/firebot_py/package.dsv'
+[2.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_py/share/firebot_py/package.sh'
+[2.714s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_py/share/firebot_py/package.bash'
+[2.715s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/firebot_py/share/firebot_py/package.zsh'
+[2.715s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/firebot_py/share/colcon-core/packages/firebot_py)
+[2.717s] Level 1:colcon.colcon_core.shell:create_environment_hook('thermal_camera', 'pythonpath_develop')
+[2.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/build/thermal_camera/share/thermal_camera/hook/pythonpath_develop.ps1'
+[2.718s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/build/thermal_camera/share/thermal_camera/hook/pythonpath_develop.dsv'
+[2.719s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/build/thermal_camera/share/thermal_camera/hook/pythonpath_develop.sh'
+[2.719s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/thermal_camera' returned '0': PYTHONPATH=/home/ana/robot_ws/build/thermal_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/thermal_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ana/robot_ws/build/thermal_camera/build --no-deps symlink_data
+[2.720s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/thermal_camera' for CMake module files
+[2.720s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/thermal_camera' for CMake config files
+[2.721s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/thermal_camera/lib'
+[2.721s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/thermal_camera/bin'
+[2.721s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/thermal_camera/lib/pkgconfig/thermal_camera.pc'
+[2.721s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/thermal_camera/lib/python3.10/site-packages'
+[2.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('thermal_camera', 'pythonpath')
+[2.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/hook/pythonpath.ps1'
+[2.722s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/hook/pythonpath.dsv'
+[2.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/hook/pythonpath.sh'
+[2.723s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/thermal_camera/bin'
+[2.724s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(thermal_camera)
+[2.724s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/package.ps1'
+[2.725s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/package.dsv'
+[2.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/package.sh'
+[2.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/package.bash'
+[2.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/thermal_camera/share/thermal_camera/package.zsh'
+[2.727s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/thermal_camera/share/colcon-core/packages/thermal_camera)
+[2.727s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'pythonpath_develop')
+[2.728s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/build/py_pubsub/share/py_pubsub/hook/pythonpath_develop.ps1'
+[2.728s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/build/py_pubsub/share/py_pubsub/hook/pythonpath_develop.dsv'
+[2.729s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/ana/robot_ws/build/py_pubsub' returned '0': PYTHONPATH=/home/ana/robot_ws/build/py_pubsub/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/py_pubsub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ana/robot_ws/build/py_pubsub/build --no-deps symlink_data
+[2.730s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/build/py_pubsub/share/py_pubsub/hook/pythonpath_develop.sh'
+[2.730s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/py_pubsub' for CMake module files
+[2.731s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/py_pubsub' for CMake config files
+[2.731s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/py_pubsub/lib'
+[2.731s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/py_pubsub/bin'
+[2.732s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/py_pubsub/lib/pkgconfig/py_pubsub.pc'
+[2.732s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/py_pubsub/lib/python3.10/site-packages'
+[2.732s] Level 1:colcon.colcon_core.shell:create_environment_hook('py_pubsub', 'pythonpath')
+[2.732s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.ps1'
+[2.733s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.dsv'
+[2.733s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/hook/pythonpath.sh'
+[2.734s] Level 1:colcon.colcon_core.environment:checking '/home/ana/robot_ws/install/py_pubsub/bin'
+[2.734s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(py_pubsub)
+[2.734s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/package.ps1'
+[2.735s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/package.dsv'
+[2.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/package.sh'
+[2.736s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/package.bash'
+[2.737s] INFO:colcon.colcon_core.shell:Creating package script '/home/ana/robot_ws/install/py_pubsub/share/py_pubsub/package.zsh'
+[2.737s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/ana/robot_ws/install/py_pubsub/share/colcon-core/packages/py_pubsub)
+[2.737s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[2.738s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[2.738s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[2.738s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[2.747s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[2.747s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[2.747s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[2.761s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[2.762s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ana/robot_ws/install/local_setup.ps1'
+[2.763s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ana/robot_ws/install/_local_setup_util_ps1.py'
+[2.765s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ana/robot_ws/install/setup.ps1'
+[2.766s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ana/robot_ws/install/local_setup.sh'
+[2.767s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/ana/robot_ws/install/_local_setup_util_sh.py'
+[2.768s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ana/robot_ws/install/setup.sh'
+[2.769s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ana/robot_ws/install/local_setup.bash'
+[2.770s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ana/robot_ws/install/setup.bash'
+[2.771s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/ana/robot_ws/install/local_setup.zsh'
+[2.772s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/ana/robot_ws/install/setup.zsh'
