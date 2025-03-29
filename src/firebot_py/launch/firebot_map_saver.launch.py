@@ -49,18 +49,11 @@ def generate_launch_description():
         ]
     )
 
-    # Add a 30-second delay before starting everything
-    delayed_start = TimerAction(
-        period=10.0,
-        actions=[
-            firebot_launch,
-            nav2_launch,
-            square_nav,
-            # random_nav,  # Uncomment if needed
-            map_saver
-        ]
-    )
 
     return LaunchDescription([
-        delayed_start
+        firebot_launch,
+        nav2_launch,
+        random_nav,
+        square_nav,
+        map_saver,
     ])
