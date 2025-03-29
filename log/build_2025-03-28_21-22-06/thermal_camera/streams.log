@@ -1,0 +1,17 @@
+[1.682s] Invoking command in '/home/ana/robot_ws/build/thermal_camera': PYTHONPATH=/home/ana/robot_ws/build/thermal_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/thermal_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ana/robot_ws/build/thermal_camera/build --no-deps symlink_data
+[2.079s] running develop
+[2.297s] running egg_info
+[2.298s] writing thermal_camera.egg-info/PKG-INFO
+[2.298s] writing dependency_links to thermal_camera.egg-info/dependency_links.txt
+[2.298s] writing entry points to thermal_camera.egg-info/entry_points.txt
+[2.298s] writing requirements to thermal_camera.egg-info/requires.txt
+[2.298s] writing top-level names to thermal_camera.egg-info/top_level.txt
+[2.300s] reading manifest file 'thermal_camera.egg-info/SOURCES.txt'
+[2.301s] writing manifest file 'thermal_camera.egg-info/SOURCES.txt'
+[2.303s] running build_ext
+[2.303s] Creating /home/ana/robot_ws/install/thermal_camera/lib/python3.10/site-packages/thermal-camera.egg-link (link to .)
+[2.304s] Installing thermal_node script to /home/ana/robot_ws/install/thermal_camera/lib/thermal_camera
+[2.305s] 
+[2.305s] Installed /home/ana/robot_ws/build/thermal_camera
+[2.305s] running symlink_data
+[2.349s] Invoked command in '/home/ana/robot_ws/build/thermal_camera' returned '0': PYTHONPATH=/home/ana/robot_ws/build/thermal_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ana/robot_ws/install/thermal_camera/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ana/robot_ws/build/thermal_camera/build --no-deps symlink_data

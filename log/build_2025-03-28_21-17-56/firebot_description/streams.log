@@ -1,0 +1,28 @@
+[0.044s] Invoking command in '/home/ana/robot_ws/build/firebot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot_description -- -j20 -l20
+[1.038s] Invoked command in '/home/ana/robot_ws/build/firebot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/ana/robot_ws/build/firebot_description -- -j20 -l20
+[1.051s] Invoking command in '/home/ana/robot_ws/build/firebot_description': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/firebot_description
+[1.063s] -- Install configuration: ""
+[1.066s] -- Execute custom install script
+[1.068s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/launch/robot_state_publisher.launch.py
+[1.068s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/gazebo_control.xacro
+[1.068s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/inertial_macros.xacro
+[1.069s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/lidar.xacro
+[1.069s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/robot.urdf.xacro
+[1.071s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/robot_core.xacro
+[1.072s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/urdf/ros2_control.xacro
+[1.075s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/ament_index/resource_index/package_run_dependencies/firebot_description
+[1.076s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/ament_index/resource_index/parent_prefix_path/firebot_description
+[1.078s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/environment/ament_prefix_path.sh
+[1.079s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/environment/ament_prefix_path.dsv
+[1.079s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/environment/path.sh
+[1.079s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/environment/path.dsv
+[1.079s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/local_setup.bash
+[1.079s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/local_setup.sh
+[1.079s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/local_setup.zsh
+[1.079s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/local_setup.dsv
+[1.079s] -- Symlinking: /home/ana/robot_ws/install/firebot_description/share/firebot_description/package.dsv
+[1.109s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/ament_index/resource_index/packages/firebot_description
+[1.109s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/cmake/firebot_descriptionConfig.cmake
+[1.109s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/cmake/firebot_descriptionConfig-version.cmake
+[1.109s] -- Up-to-date symlink: /home/ana/robot_ws/install/firebot_description/share/firebot_description/package.xml
+[1.142s] Invoked command in '/home/ana/robot_ws/build/firebot_description' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/ana/robot_ws/build/firebot_description

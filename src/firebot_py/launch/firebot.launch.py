@@ -105,7 +105,7 @@ def generate_launch_description(): # Get package directories
         lidar_launch,
         slam_node,
         stamp_converter,
-        thermal_node,
+        # thermal_node,
         # twist_stamper,
         # twist_mux
         # rviz_node
