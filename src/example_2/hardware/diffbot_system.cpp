@@ -180,7 +180,7 @@ hardware_interface::return_type ros2_control_demo_example_2 ::DiffBotSystemHardw
 {
   int motor_left_counts_per_loop = wheel_left_.cmd / wheel_left_.rads_per_count / config_.loop_rate;
   int motor_right_counts_per_loop = wheel_right_.cmd / wheel_right_.rads_per_count / config_.loop_rate;
-  comms_.set_motor_values(motor_left_counts_per_loop, motor_right_counts_per_loop);
+  comms_.set_motor_values(-motor_left_counts_per_loop, -motor_right_counts_per_loop); //added negative here
   return hardware_interface::return_type::OK;
 }
 
