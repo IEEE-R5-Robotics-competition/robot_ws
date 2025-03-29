@@ -20,10 +20,10 @@ class SquareNavNode(Node):
         #     (0.5, 1.8, -math.pi/2)     # Top-left
         # ]
         self.waypoints = [
-            (0.0, 0.0, 0.0),           # Bottom-left
-            (0.5, 0, math.pi/2),     # Bottom-right
+            (0.5, 0.5, 0.0),           # Bottom-left
+            (0.5, 0.5, math.pi/2),     # Bottom-right
             (0.5, 0.5, math.pi),       # Top-right
-            (0.0, 0.5, -math.pi/2)     # Top-left
+            (0.5, 0.5, -math.pi/2)     # Top-left
         ]
 
         self.current_index = 0

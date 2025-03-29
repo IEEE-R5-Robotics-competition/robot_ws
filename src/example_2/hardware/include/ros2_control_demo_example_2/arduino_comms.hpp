@@ -112,7 +112,8 @@ public:
         return;
     }
 
-    std::string token_1 = response.substr(0, del_pos);
+    // std::string token_1 = response.substr(0, del_pos);
+    std::string token_1 = response.substr(del_pos + 1, response.length() - del_pos);
     std::string token_2 = response.substr(del_pos + 1, response.length() - del_pos);
     
     if (token_1.empty() || token_2.empty()) {
