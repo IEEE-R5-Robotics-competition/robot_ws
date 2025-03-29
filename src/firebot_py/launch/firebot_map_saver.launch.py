@@ -53,7 +53,7 @@ def generate_launch_description():
     return LaunchDescription([
         firebot_launch,
         nav2_launch,
-        random_nav,
+        # random_nav,
         square_nav,
         map_saver,
     ])
