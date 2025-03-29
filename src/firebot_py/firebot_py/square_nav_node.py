@@ -13,12 +13,19 @@ class SquareNavNode(Node):
         self.timer = self.create_timer(self.timer_period, self.timer_callback)
 
         # Define square waypoints in meters (8 ft = ~2.44 m)
+        # self.waypoints = [
+        #     (0.5, 0.5, 0.0),           # Bottom-left
+        #     (1.8, 0.5, math.pi/2),     # Bottom-right
+        #     (1.8, 1.8, math.pi),       # Top-right
+        #     (0.5, 1.8, -math.pi/2)     # Top-left
+        # ]
         self.waypoints = [
-            (0.5, 0.5, 0.0),           # Bottom-left
-            (2.0, 0.5, math.pi/2),     # Bottom-right
-            (2.0, 2.0, math.pi),       # Top-right
-            (0.5, 2.0, -math.pi/2)     # Top-left
+            (0.0, 0.0, 0.0),           # Bottom-left
+            (0.5, 0, math.pi/2),     # Bottom-right
+            (0.5, 0.5, math.pi),       # Top-right
+            (0.0, 0.5, -math.pi/2)     # Top-left
         ]
+
         self.current_index = 0
         self.ishot = False
 
@@ -48,7 +55,7 @@ class SquareNavNode(Node):
         x, y, yaw = self.waypoints[self.current_index]
 
         goal = PoseStamped()
-        goal.header.frame_id = "map"
+        goal.header.frame_id = "odom"
         goal.header.stamp = self.get_clock().now().to_msg()
         goal.pose.position.x = x
         goal.pose.position.y = y
