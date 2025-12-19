@@ -1,1 +1,0 @@
-/home/ana/robot_ws/build/firebot_description/ament_cmake_core/firebot_descriptionConfig-version.cmake

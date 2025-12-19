@@ -1,1 +1,0 @@
-/home/ana/robot_ws/build/firebot_cpp/ament_cmake_core/firebot_cppConfig.cmake
