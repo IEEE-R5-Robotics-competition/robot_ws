@@ -1,3 +1,0 @@
-[console_scripts]
-thermal_node = thermal_camera.thermal_node:main
-
